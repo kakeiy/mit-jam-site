@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://web.mit.edu/jam/www/sitemap.xml
