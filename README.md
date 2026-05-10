@@ -2,6 +2,14 @@
 
 Static website draft for the Japanese Association of MIT.
 
+## Structure
+
+- `index.html` - MoMA-inspired JAM homepage.
+- `events/` - Dedicated event pages and yearly archive index.
+- `assets/photos/` - Hanami 2026 photos from the approved event album.
+- `assets/logos/` - JAM logo variants from the local `Logos` folder.
+- `assets/derived/` - Smaller web-ready copies used in hero and listing layouts.
+
 ## Local Preview
 
 Open `index.html` directly in a browser, or serve the folder locally:

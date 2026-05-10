@@ -3,104 +3,257 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Japanese Association of MIT is a student organization building community through Japanese culture, food, language, and events at MIT.">
+    <meta name="description" content="Japanese Association of MIT connects Japan and MIT through culture, community, events, sports, and student support.">
+    <meta property="og:title" content="Japanese Association of MIT">
+    <meta property="og:description" content="Connecting Japan and MIT through culture, community, events, sports, and student support.">
+    <meta property="og:image" content="assets/derived/hanami-crowd.jpg">
     <title>Japanese Association of MIT</title>
-    <link rel="preload" href="assets/jam-logo-main.png" as="image">
+    <link rel="preload" href="assets/derived/hanami-crowd.jpg" as="image">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Japanese Association of MIT home">
-        <img src="assets/jam-logo-main.png" alt="JAM Japanese Association of MIT">
+      <a class="wordmark" href="#top" aria-label="Japanese Association of MIT home">
+        <span class="wordmark-jam">JAM</span>
+        <span class="wordmark-name">Japanese Association of MIT</span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
         <a href="#events">Events</a>
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#people">People</a>
         <a href="#join">Join</a>
-        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="home">
+    <main id="top">
       <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image">
+          <img src="assets/derived/hanami-crowd.jpg" alt="A large crowd gathered at a JAM Hanami Festival inside Walker Memorial">
+        </div>
         <div class="hero-copy">
-          <p class="eyebrow">Japanese Association of MIT</p>
-          <h1 id="hero-title">A home for Japanese culture and community at MIT.</h1>
-          <p class="hero-text">JAM brings students, researchers, alumni, and friends together through cultural events, food, language, and everyday community.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#join">Join JAM</a>
-            <a class="button secondary" href="#events">See Events</a>
+          <p class="kicker">Japanese Association of MIT</p>
+          <h1 id="hero-title">Connecting Japan and MIT.</h1>
+          <p class="hero-deck">A student-run home for Japanese culture, food, language, sports, research, and everyday community across the Institute.</p>
+          <div class="hero-actions" aria-label="Quick links">
+            <a class="text-link" href="#events">See what is on</a>
+            <a class="text-link" href="mailto:jam-hq@mit.edu">Contact JAM</a>
           </div>
         </div>
-        <div class="hero-media" aria-label="Hanami Festival poster preview">
-          <img src="assets/hanami-2026.png" alt="Hanami Festival poster with cherry blossoms, sushi, green tea, and event details">
-        </div>
       </section>
 
-      <section class="notice" aria-label="Current highlight">
-        <span>Latest</span>
-        <p>Thanks to everyone who joined Hanami Festival 2026 at Walker Memorial.</p>
+      <section class="ticker" aria-label="JAM focus">
+        <p>Culture</p>
+        <p>Community</p>
+        <p>Sports</p>
+        <p>Science</p>
+        <p>Student support</p>
       </section>
 
-      <section class="section" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>JAM connects MIT with Japan.</h2>
+      <section class="section section-events" id="events" aria-labelledby="events-title">
+        <div class="section-header">
+          <p class="kicker">Exhibitions & events</p>
+          <h2 id="events-title">What is on with JAM.</h2>
+          <a class="archive-link" href="events/">Browse event pages and archives</a>
         </div>
-        <div class="about-grid">
-          <p>Japanese Association of MIT is a student-run community for people interested in Japan, Japanese culture, and Japanese-speaking life around MIT.</p>
-          <p>We host cultural gatherings, seasonal celebrations, casual meetups, and collaborations with other student groups and local partners.</p>
-        </div>
-      </section>
 
-      <section class="section events" id="events">
-        <div class="section-heading">
-          <p class="eyebrow">Events</p>
-          <h2>Seasonal, welcoming, and hands-on.</h2>
-        </div>
-        <div class="event-list">
-          <article class="event-card">
-            <span>Spring</span>
-            <h3>Hanami Festival</h3>
-            <p>Cherry-blossom season gathering with food, tea, calligraphy, shogi, origami, and Japanese cultural booths.</p>
+        <div class="event-board">
+          <article class="event-row event-row-feature">
+            <div class="event-date">
+              <span>Recent</span>
+              <strong>Hanami</strong>
+            </div>
+            <div class="event-copy">
+              <h3><a class="event-title-link" href="events/hanami.html">Hanami Festival 2026</a></h3>
+              <p>JAM's spring gathering at Walker Memorial, with free sushi, matcha, shogi, origami, calligraphy, and cultural booths for the MIT community.</p>
+              <p class="event-detail"><a href="events/hanami.html">View Hanami page and archive</a></p>
+              <ul class="tags" aria-label="Hanami highlights">
+                <li>Food</li>
+                <li>Culture booths</li>
+                <li>All welcome</li>
+              </ul>
+            </div>
+            <figure class="event-media">
+              <img src="assets/derived/sushi-table.jpg" alt="Sushi boxes prepared for Hanami Festival attendees" loading="lazy">
+            </figure>
           </article>
-          <article class="event-card">
-            <span>Fall</span>
-            <h3>Tsukimi and Community Nights</h3>
-            <p>Low-pressure meetups for new and returning members, often centered on conversation, snacks, and seasonal traditions.</p>
+
+          <article class="event-row">
+            <div class="event-date">
+              <span>May 22, 2026</span>
+              <strong>5:00-6:15 PM</strong>
+            </div>
+            <div class="event-copy">
+              <h3><a class="event-title-link" href="events/beneath-great-wave.html">Beneath the Great Wave</a></h3>
+              <p>Expert talks and a panel on tsunami science, disaster response, infrastructure, preparedness, and Japan's relationship with natural risk.</p>
+              <p class="event-detail">MIT Stata Center 32-155. Free admission. Confirmed speaker lineup.</p>
+              <ul class="tags" aria-label="Beneath the Great Wave themes">
+                <li>Science</li>
+                <li>Risk</li>
+                <li>Resilience</li>
+              </ul>
+            </div>
+            <figure class="event-media">
+              <img src="assets/derived/great-wave.jpg" alt="The Great Wave off Kanagawa artwork used for the Beneath the Great Wave event" loading="lazy">
+            </figure>
           </article>
-          <article class="event-card">
-            <span>Year-round</span>
-            <h3>Collaborations</h3>
-            <p>Events with MIT groups and Boston-area communities that share Japanese arts, language, food, film, and games.</p>
+
+          <article class="event-row">
+            <div class="event-date">
+              <span>Early fall</span>
+              <strong>Orientation</strong>
+            </div>
+            <div class="event-copy">
+              <h3><a class="event-title-link" href="events/orientation.html">MIT New Student Orientation</a></h3>
+              <p>A welcome event for incoming students at the start of the academic year. Details are still being shaped, with space for food, friends, and practical advice.</p>
+              <p class="event-detail"><a href="events/orientation.html">View orientation page and archive</a></p>
+              <ul class="tags" aria-label="Orientation themes">
+                <li>New students</li>
+                <li>Welcome</li>
+                <li>Details TBA</li>
+              </ul>
+            </div>
+            <figure class="event-media">
+              <img src="assets/derived/origami-table.jpg" alt="Origami and craft materials arranged at a JAM cultural table" loading="lazy">
+            </figure>
           </article>
         </div>
       </section>
 
-      <section class="section split" id="join">
+      <section class="section statement" id="about" aria-labelledby="about-title">
+        <p class="kicker">About</p>
+        <h2 id="about-title">JAM is the heartbeat of the Japanese community at MIT, open to people who share a connection to Japan.</h2>
+        <div class="statement-grid">
+          <p>JAM's constitution defines three purposes: introduce and promote Japanese culture to MIT, foster social connections and cultural exchange, and facilitate academic outreach rooted in Japanese perspectives.</p>
+          <p>Membership is open to MIT students. Our wider community also brings together graduate students, postdocs, faculty, visiting researchers, families, alumni, and friends around events, sports, and student support.</p>
+        </div>
+      </section>
+
+      <section class="photo-grid" aria-label="JAM event photos">
+        <figure class="photo-cell photo-wide">
+          <img src="assets/photos/photo-08.jpg" alt="Hanami Festival crowd in Morss Hall" loading="lazy">
+        </figure>
+        <figure class="photo-cell">
+          <img src="assets/photos/photo-03.jpg" alt="JAM volunteers welcoming visitors at an event table" loading="lazy">
+        </figure>
+        <figure class="photo-cell">
+          <img src="assets/photos/photo-11.jpg" alt="A volunteer serving food at a JAM event" loading="lazy">
+        </figure>
+        <figure class="photo-cell">
+          <img src="assets/photos/photo-12.jpg" alt="Origami materials on a table" loading="lazy">
+        </figure>
+      </section>
+
+      <section class="section" id="activities" aria-labelledby="activities-title">
+        <div class="section-header section-header-split">
+          <div>
+            <p class="kicker">Activities</p>
+            <h2 id="activities-title">What JAM does between the big events.</h2>
+          </div>
+          <p class="section-note">Culture is not only a festival. It is weekend basketball, quick introductions, campus tours, and the small bits of help that make MIT easier to inhabit.</p>
+        </div>
+
+        <div class="activity-list">
+          <article class="activity-item">
+            <span>01</span>
+            <div>
+              <h3>Basketball Club</h3>
+              <p>About 30 members play street basketball most weekends at a local park, join MIT intramural play, and face Boston Japan Basketball Club several times a year.</p>
+            </div>
+          </article>
+          <article class="activity-item">
+            <span>02</span>
+            <div>
+              <h3>Campus Tour Support</h3>
+              <p>JAM helps support campus visits for Japanese high school students and other groups interested in seeing MIT from the inside.</p>
+            </div>
+          </article>
+          <article class="activity-item">
+            <span>03</span>
+            <div>
+              <h3>Annual Cultural Programming</h3>
+              <p>JAM builds recurring programs that can grow year by year, from Hanami to lecture-style events such as Beneath the Great Wave.</p>
+            </div>
+          </article>
+          <article class="activity-item">
+            <span>04</span>
+            <div>
+              <h3>Student Welcome</h3>
+              <p>At the beginning of the academic year, JAM helps incoming students meet peers, ask practical questions, and find a community early.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section people" id="people" aria-labelledby="people-title">
+        <div class="section-header">
+          <p class="kicker">Members</p>
+          <h2 id="people-title">Officers 2025-2026.</h2>
+        </div>
+        <div class="people-grid">
+          <div class="leaders">
+            <article>
+              <span>President</span>
+              <strong>Kakei Yamamoto</strong>
+            </article>
+            <article>
+              <span>Vice President</span>
+              <strong>Toshiki Aoki</strong>
+            </article>
+            <article>
+              <span>Treasurer</span>
+              <strong>Shungo Fukaya</strong>
+            </article>
+          </div>
+          <div class="officer-list" aria-label="JAM officers">
+            <span>Daishi Kiyohara</span>
+            <span>Keita Mori</span>
+            <span>Konatsu Mori</span>
+            <span>Kota Kondo</span>
+            <span>Kye Shimizu</span>
+            <span>Ryotaro Okabe</span>
+            <span>Shoki Kishida</span>
+            <span>Takuya Isogawa</span>
+            <span>Tasuku Ono</span>
+            <span>Yugo Onishi</span>
+            <span>Yuka Ikarashi</span>
+            <span>Yurika Aonuki</span>
+          </div>
+        </div>
+        <div class="constitution-panel" aria-label="JAM constitution summary">
+          <p class="kicker">Constitution</p>
+          <div class="constitution-grid">
+            <article>
+              <span>Purpose</span>
+              <p>Japanese culture, cultural exchange, and academic outreach rooted in Japanese perspectives.</p>
+            </article>
+            <article>
+              <span>Membership</span>
+              <p>All MIT students are eligible for membership. JAM maintains an MIT-student majority as a student organization.</p>
+            </article>
+            <article>
+              <span>Governance</span>
+              <p>Officers are elected annually in spring, with president and treasurer roles held by distinct MIT students.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="join-section" id="join" aria-labelledby="join-title">
         <div>
-          <p class="eyebrow">Join</p>
-          <h2>Open to the MIT community and friends.</h2>
+          <p class="kicker">Join / volunteer / collaborate</p>
+          <h2 id="join-title">Bring an idea to JAM.</h2>
         </div>
-        <div class="join-panel">
-          <p>Join the mailing list to hear about upcoming events, volunteer opportunities, and community announcements.</p>
-          <a class="button primary" href="https://groups.mit.edu/webmoira/list/jam-all">Manage jam-all on WebMoira</a>
-        </div>
-      </section>
-
-      <section class="section contact" id="contact">
-        <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2>Reach JAM.</h2>
-        </div>
-        <div class="contact-grid">
-          <a href="mailto:jam-hq@mit.edu">jam-hq@mit.edu</a>
-          <a href="https://groups.mit.edu/webmoira/list/jam-all">jam-all mailing list</a>
+        <div class="join-actions">
+          <p>Write to JAM if you want to join the community, volunteer at an event, play basketball, coordinate a campus visit, or propose a cultural program.</p>
+          <a class="button" href="mailto:jam-hq@mit.edu">jam-hq@mit.edu</a>
+          <a class="button button-invert" href="https://groups.mit.edu/webmoira/list/jam-all">Join jam-all</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
+      <img src="assets/logos/jam-logo-mit.png" alt="Japanese Association of MIT">
       <p>Japanese Association of MIT</p>
       <p>Massachusetts Institute of Technology</p>
     </footer>
