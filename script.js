@@ -88,6 +88,19 @@ if (exhibitionRails.length) {
     });
   };
 
+  const scrollToNextCard = (rail) => {
+    const maxScroll = rail.scrollWidth - rail.clientWidth;
+    if (maxScroll <= 4 || rail.dataset.paused === "true") return;
+
+    const step = getCardStep(rail);
+    const nextLeft = rail.scrollLeft + step;
+
+    rail.scrollTo({
+      left: nextLeft >= maxScroll - 4 ? 0 : Math.min(nextLeft, maxScroll),
+      behavior: "smooth",
+    });
+  };
+
   railControls.forEach((button) => {
     button.addEventListener("click", () => {
       const rail = button.closest(".exhibitions-section")?.querySelector(".exhibition-rail");
@@ -95,4 +108,20 @@ if (exhibitionRails.length) {
       scrollRailByCard(rail, button.matches("[data-rail-prev]") ? -1 : 1);
     });
   });
+
+  if (!prefersReducedMotion) {
+    exhibitionRails.forEach((rail) => {
+      const setPaused = (paused) => {
+        rail.dataset.paused = paused ? "true" : "false";
+      };
+
+      setPaused(false);
+      rail.addEventListener("pointerenter", () => setPaused(true));
+      rail.addEventListener("pointerleave", () => setPaused(false));
+      rail.addEventListener("focusin", () => setPaused(true));
+      rail.addEventListener("focusout", () => setPaused(false));
+
+      window.setInterval(() => scrollToNextCard(rail), 3000);
+    });
+  }
 }

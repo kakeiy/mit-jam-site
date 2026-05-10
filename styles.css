@@ -637,6 +637,21 @@ h3 {
   line-height: 1.22;
 }
 
+.hero-actions,
+.inline-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-actions {
+  margin: 26px 0 0;
+}
+
+.inline-actions {
+  margin: 0;
+}
+
 .page-hero-media,
 .event-hero-media {
   margin: 0;
