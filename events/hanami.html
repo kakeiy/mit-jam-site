@@ -26,13 +26,14 @@
         <a href="../index.html#activities">Activities</a>
         <a href="../index.html#support">Support</a>
         <a href="index.html">Archive</a>
+        <button class="nav-search" type="button" aria-label="Search JAM site" data-search-open>⌕</button>
       </nav>
     </header>
 
     <main>
       <section class="event-hero poster-hero">
         <div class="event-hero-copy">
-          <p class="kicker">Annual spring festival</p>
+          <p class="kicker">Closed · annual spring festival</p>
           <h1>Hanami Festival.</h1>
           <p class="hero-deck">A spring gathering for the MIT community with food, tea, games, calligraphy, origami, and Japanese culture booths.</p>
         </div>
@@ -44,8 +45,20 @@
       <section class="event-facts" aria-label="Hanami Festival facts">
         <div><span>Date</span><strong>May 9, 2026</strong></div>
         <div><span>Venue</span><strong>Walker Memorial</strong></div>
+        <div><span>Status</span><strong>Closed</strong></div>
+        <div><span>Attendance</span><strong>About 350 people</strong></div>
         <div><span>Format</span><strong>Food + cultural booths</strong></div>
         <div><span>Audience</span><strong>MIT community</strong></div>
+      </section>
+
+      <section class="section event-story event-report" aria-labelledby="hanami-report">
+        <div class="section-header section-header-split">
+          <div>
+            <p class="kicker">Event report</p>
+            <h2 id="hanami-report">Rainy weekend, full room.</h2>
+          </div>
+          <p class="section-note">Hanami Festival 2026 is now closed. Even with weekend rain, the event drew about 350 participants. Sushi sold out in the first 30 minutes, and the shogi, origami, calligraphy, kendama, and other booths stayed lively throughout the evening.</p>
+        </div>
       </section>
 
       <section class="section event-story" aria-labelledby="hanami-overview">
@@ -72,18 +85,54 @@
         </div>
       </section>
 
-      <section class="photo-grid" aria-label="Hanami photos">
-        <figure class="photo-cell photo-wide">
+      <section class="hanami-gallery" aria-label="Hanami Festival 2026 photo gallery">
+        <figure class="gallery-cell gallery-large">
+          <img src="../assets/hanami/hanami-hall.jpg" alt="A large Hanami Festival crowd gathered inside Walker Memorial" loading="lazy">
+        </figure>
+        <figure class="gallery-cell">
           <img src="../assets/hanami/hanami-tables.jpg" alt="Families and visitors eating together at Hanami Festival" loading="lazy">
         </figure>
-        <figure class="photo-cell">
-          <img src="../assets/hanami-2026.png" alt="Hanami Festival 2026 event poster" loading="lazy">
+        <figure class="gallery-cell">
+          <img src="../assets/hanami/hanami-shogi.jpg" alt="Visitors playing shogi at Hanami Festival" loading="lazy">
         </figure>
-        <figure class="photo-cell">
+        <figure class="gallery-cell">
           <img src="../assets/hanami/hanami-calligraphy.jpg" alt="Calligraphy booth at Hanami Festival" loading="lazy">
         </figure>
-        <figure class="photo-cell">
+        <figure class="gallery-cell">
           <img src="../assets/hanami/hanami-origami.jpg" alt="Origami materials at Hanami Festival" loading="lazy">
+        </figure>
+        <!-- <figure class="gallery-cell">
+          <img src="../assets/hanami/hanami-kendama.jpg" alt="Visitors trying kendama at Hanami Festival" loading="lazy">
+        </figure> -->
+        <figure class="gallery-cell gallery-large">
+          <img src="../assets/hanami/hanami-dscf6940.jpg" alt="Hanami Festival attendees gathering around cultural activity tables" loading="lazy">
+        </figure>
+        <figure class="gallery-cell">
+          <img src="../assets/hanami/hanami-dscf6947.jpg" alt="Visitors sharing food and conversation at Hanami Festival" loading="lazy">
+        </figure>
+        <figure class="gallery-cell">
+          <img src="../assets/hanami/hanami-dscf6956.jpg" alt="A busy Hanami Festival table inside Walker Memorial" loading="lazy">
+        </figure>
+        <figure class="gallery-cell gallery-large">
+          <img src="../assets/hanami/hanami-dscf6960.jpg" alt="JAM members and visitors talking during Hanami Festival" loading="lazy">
+        </figure>
+        <figure class="gallery-cell">
+          <img src="../assets/hanami/hanami-dscf6982.jpg" alt="Guests participating in Hanami Festival activities" loading="lazy">
+        </figure>
+        <!-- <figure class="gallery-cell">
+          <img src="../assets/hanami/hanami-dscf6986.jpg" alt="Shogi; Hanami Festival guests seated together in Walker Memorial" loading="lazy">
+        </figure> -->
+        <!-- <figure class="gallery-cell gallery-large">
+          <img src="../assets/hanami/hanami-dscf6996.jpg" alt="A lively Hanami Festival booth with visitors" loading="lazy">
+        </figure> -->
+        <!-- <figure class="gallery-cell">
+          <img src="../assets/hanami/hanami-dscf7021.jpg" alt="Hanami Festival participants enjoying hands-on activities" loading="lazy">
+        </figure> -->
+        <figure class="gallery-cell">
+          <img src="../assets/hanami/hanami-dscf7036.jpg" alt="Kendama; Visitors moving between booths at Hanami Festival" loading="lazy">
+        </figure>
+        <figure class="gallery-cell gallery-wide">
+          <img src="../assets/hanami/hanami-dscf7049.jpg" alt="Calligraphy booth and visitors at Hanami Festival" loading="lazy">
         </figure>
       </section>
 
@@ -108,9 +157,22 @@
     </main>
 
     <footer class="site-footer">
-      <img src="../assets/logos/jam-logo-main-trim.png" alt="JAM">
-      <p>Hanami Festival</p>
-      <p><a href="index.html">All events</a></p>
+      <div class="footer-brand">
+        <img src="../assets/logos/jam-logo-main-trim.png" alt="Japanese Association of MIT">
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">All events</a>
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../assets/JAM_Constitution.pdf">Constitution</a>
+        <a href="mailto:jam-hq@mit.edu">Contact</a>
+      </nav>
+      <div class="mit-affiliation">
+        <a class="mit-lockup" href="https://www.mit.edu/" aria-label="Massachusetts Institute of Technology">
+          <img src="../assets/logos/mit_logo_black.png" alt="MIT">
+          <span>Massachusetts Institute of Technology</span>
+        </a>
+        <p>JAM is an <a href="https://asa.mit.edu/about-asa/">Association of Student Activities (ASA)-recognized organization</a> with its student governance home in the <a href="https://gsc.mit.edu/">Graduate Student Council (GSC)</a> of MIT.</p>
+      </div>
     </footer>
     <script src="../script.js"></script>
   </body>

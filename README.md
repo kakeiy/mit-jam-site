@@ -17,6 +17,14 @@ The original selected source photos in `Photos-3-001/` are intentionally ignored
 Open `index.html` directly in a browser, or serve the folder locally:
 
 ```sh
+npm run dev
+```
+
+Then visit `http://localhost:5173`.
+
+You can also use Python directly:
+
+```sh
 python3 -m http.server 8080
 ```
 
