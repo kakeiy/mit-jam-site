@@ -65,9 +65,9 @@
       <section class="moma-section exhibitions-section" id="events" aria-labelledby="events-title">
         <div class="section-title-row">
           <h2 id="events-title">Exhibitions</h2>
-          <div class="section-arrows" aria-hidden="true">
-            <span>←</span>
-            <span>→</span>
+          <div class="section-arrows" aria-label="Exhibition carousel controls">
+            <button type="button" data-rail-prev aria-label="Previous exhibition">←</button>
+            <button type="button" data-rail-next aria-label="Next exhibition">→</button>
           </div>
         </div>
         <div class="exhibition-rail">
@@ -75,7 +75,7 @@
             <a href="events/hanami.html">
               <img src="assets/hanami/hanami-hall.jpg" alt="A large Hanami Festival crowd gathered inside Walker Memorial" loading="lazy">
               <h3>Hanami Festival 2026</h3>
-              <p>Walker Memorial</p>
+              <p>May 9, 2026</p>
             </a>
           </article>
           <article class="exhibition-card">
@@ -107,14 +107,6 @@
         <div>
           <p>Historically, JAM began as a community group for Japanese PhD students at MIT, a small community of roughly 20 people across the Institute. Today, its events welcome the broader MIT community.</p>
           <a href="assets/JAM_Constitution.docx">JAM Constitution →</a>
-        </div>
-      </section>
-
-      <section class="green-band ecosystem-band" aria-labelledby="ecosystem-title">
-        <h2 id="ecosystem-title">Graduate-led, MIT-centered.</h2>
-        <div>
-          <p>The officer team is open to MIT graduate students, postdocs, researchers, Harvard graduate students studying at MIT, and their families. JAM works alongside related Japanese community groups including MIT JSU for undergraduates and Sloan Japan for the MBA/Sloan community.</p>
-          <a href="mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM">Join the officer team →</a>
         </div>
       </section>
 
@@ -215,6 +207,14 @@
         </div>
       </section>
 
+      <section class="green-band ecosystem-band" aria-labelledby="ecosystem-title">
+        <h2 id="ecosystem-title">Graduate-led, MIT-centered.</h2>
+        <div>
+          <p>The officer team is open to MIT graduate students, postdocs, researchers, Harvard graduate students studying at MIT, and their families. JAM works alongside related Japanese community groups including MIT JSU for undergraduates and Sloan Japan for the MBA/Sloan community.</p>
+          <a href="mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM">Join the officer team →</a>
+        </div>
+      </section>
+
       <section class="moma-section events-for-everyone" id="activities" aria-labelledby="activities-title">
         <div class="collection-intro">
           <h2 id="activities-title">Events for everyone</h2>
@@ -240,7 +240,10 @@
       </section>
 
       <section class="newsletter-strip" id="join" aria-labelledby="join-title">
-        <h2 id="join-title">Get JAM updates.</h2>
+        <div class="newsletter-copy">
+          <h2 id="join-title">Get JAM updates.</h2>
+          <p>jam-all reaches roughly 500-600 JAM members and friends across the MIT community.</p>
+        </div>
         <div>
           <a class="black-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfAS_hkPno6dewLlewlzrTyg8A7t59hIbqibPIAspVf-8z_nA/viewform?usp=dialog">Join jam-all</a>
           <a class="text-button" href="mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM">Become an officer</a>
