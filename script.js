@@ -1,4 +1,4 @@
-const header = document.querySelector(".museum-header, .site-header");
+const header = document.querySelector(".jam-header, .site-header");
 const heroSlides = Array.from(document.querySelectorAll("[data-hero-slide]"));
 const exhibitionRails = Array.from(document.querySelectorAll(".exhibition-rail"));
 const railControls = Array.from(document.querySelectorAll("[data-rail-prev], [data-rail-next]"));
