@@ -66,3 +66,71 @@ window.JAM_SEARCH_INDEX = [
     "keywords": "privacy policy data google forms email"
   }
 ];
+window.JAM_SEARCH_INDEX_JA = [
+  {
+    "title": "JAMについて",
+    "url": "index-ja.html#about",
+    "description": "MITの日本人会JAMについて。日本とMITを文化、コミュニティ、イベント、スポーツ、学術交流でつなぎます。",
+    "keywords": "JAM 日本人会 MIT 歴史 文化 コミュニティ 交流 ASA GSC"
+  },
+  {
+    "title": "展示・イベント",
+    "url": "index-ja.html#events",
+    "description": "花見フェスティバル、Beneath the Great Wave、オリエンテーション、活動紹介など。",
+    "keywords": "イベント 展示 花見 great wave オリエンテーション バスケットボール アーカイブ"
+  },
+  {
+    "title": "花見フェスティバル",
+    "url": "events/hanami.html",
+    "description": "MIT JAMの花見フェスティバル。2026年は週末の雨にもかかわらず約350名が参加しました。",
+    "keywords": "花見 フェスティバル 2026 寿司 雨 350 将棋 折り紙 書道 けん玉 Walker Memorial"
+  },
+  {
+    "title": "Beneath the Great Wave",
+    "url": "events/beneath-great-wave.html",
+    "description": "日本、津波科学、防災、インフラ、レジリエンスを扱うMIT JAMの講演・パネルイベント。",
+    "keywords": "Beneath the Great Wave 津波 科学 防災 インフラ レジリエンス 日本 寿司 お茶 RSVP"
+  },
+  {
+    "title": "MIT新入生オリエンテーション",
+    "url": "events/orientation.html",
+    "description": "MIT JAMによる新入生向けオリエンテーションページ。",
+    "keywords": "オリエンテーション 新入生 MIT 生活 相談 コミュニティ"
+  },
+  {
+    "title": "MIT公認団体としてのJAM",
+    "url": "index-ja.html#recognition",
+    "description": "JAMはMITのASA公認団体で、GSCを母体とする大学院生中心の学生団体です。",
+    "keywords": "MIT ASA GSC 公認団体 大学院生"
+  },
+  {
+    "title": "JAM運営メンバー",
+    "url": "index-ja.html#people",
+    "description": "現在のJAM officer一覧と運営参加について。",
+    "keywords": "officer 運営メンバー 会長 副会長 会計 参加"
+  },
+  {
+    "title": "活動",
+    "url": "index-ja.html#activities",
+    "description": "JAMの文化イベント、バスケットボールクラブ、キャンパスツアー支援など。",
+    "keywords": "活動 バスケットボール 文化イベント キャンパスツアー"
+  },
+  {
+    "title": "支援・スポンサー",
+    "url": "index-ja.html#support",
+    "description": "JAMのイベント支援、スポンサー、協力団体について。",
+    "keywords": "支援 sponsor スポンサー SGFC Taktopia GPI 領事館"
+  },
+  {
+    "title": "JAM Constitution",
+    "url": "assets/JAM_Constitution.pdf",
+    "description": "JAM Constitution document.",
+    "keywords": "constitution 規約"
+  },
+  {
+    "title": "プライバシーポリシー",
+    "url": "privacy.html",
+    "description": "JAMウェブサイトのプライバシーポリシー。",
+    "keywords": "privacy policy プライバシー"
+  }
+];

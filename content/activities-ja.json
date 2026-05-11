@@ -1,0 +1,20 @@
+[
+  {
+    "title": "年次文化プログラム",
+    "body": "花見フェスティバルからBeneath the Great Waveのような講演型イベントまで、年ごとに積み重ねていける継続的なプログラムです。",
+    "image": "assets/hanami/hanami-shogi.jpg",
+    "alt": "花見フェスティバルで将棋を楽しむ学生と来場者"
+  },
+  {
+    "title": "バスケットボールクラブ",
+    "body": "約30名のメンバーが週末を中心にストリートバスケットボールを行い、MIT intramuralにも参加し、Boston Japan Basketball Clubとも年に数回対戦しています。",
+    "image": "assets/derived/basketball-club.jpg",
+    "alt": "MITの体育館で活動するJAM Basketball Club"
+  },
+  {
+    "title": "キャンパスツアー支援",
+    "body": "日本の高校生や、MITを内側から見学したい団体のキャンパス訪問をJAMがサポートしています。",
+    "image": "assets/hanami/hanami-kendama.jpg",
+    "alt": "JAMの文化ブースでけん玉を体験する来場者"
+  }
+]

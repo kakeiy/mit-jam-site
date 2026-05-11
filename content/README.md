@@ -112,6 +112,10 @@ Hanami and Beneath the Great Wave are useful examples.
 ## Homepage Sections
 
 - `site.json`: global copy, hero slides, mission, recognition, newsletter, support copy.
+- `site-ja.json`: Japanese copy for the generated homepage `index-ja.html`.
 - `officers.json`: officer grid.
+- `officers-ja.json`: Japanese officer role labels for the generated homepage.
 - `activities.json`: activity cards.
+- `activities-ja.json`: Japanese activity cards for the generated homepage.
 - `supporters.json`: sponsor/supporter list.
+- `events-ja.json`: Japanese event-card titles and search text for the generated homepage.

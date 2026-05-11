@@ -1,0 +1,165 @@
+{
+  "baseUrl": "https://web.mit.edu/jam/www/",
+  "siteName": "JAM | Japanese Association of MIT",
+  "organizationName": "Japanese Association of MIT",
+  "contactEmail": "jam-hq@mit.edu",
+  "updatesUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfAS_hkPno6dewLlewlzrTyg8A7t59hIbqibPIAspVf-8z_nA/viewform?usp=dialog",
+  "officerInterestUrl": "mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM",
+  "sponsorUrl": "mailto:jam-hq@mit.edu?subject=JAM%20sponsorship%20inquiry",
+  "actions": {
+    "contact": "お問い合わせ",
+    "join": "運営に参加",
+    "updates": "更新を受け取る"
+  },
+  "ariaLabels": {
+    "home": "Japanese Association of MIT ホーム",
+    "quickActions": "主要リンク",
+    "primaryNavigation": "主要ナビゲーション"
+  },
+  "nav": {
+    "about": "JAMについて",
+    "events": "展示・イベント",
+    "officers": "運営メンバー",
+    "activities": "活動",
+    "support": "支援",
+    "archive": "アーカイブ",
+    "searchLabel": "JAMサイト内検索"
+  },
+  "sectionLabels": {
+    "exhibitions": "展示",
+    "previousExhibition": "前の展示",
+    "nextExhibition": "次の展示",
+    "exhibitionControls": "展示カードの操作",
+    "heroHighlights": "JAMの写真ハイライト",
+    "supportersLabel": "現在・過去の支援団体"
+  },
+  "home": {
+    "title": "MIT JAM | Japanese Association of MIT",
+    "pageTitle": "MIT JAM | Japanese Association of MIT",
+    "description": "MIT JAM（Japanese Association of MIT）の公式サイトです。JAMは文化、コミュニティ、イベント、スポーツ、学術交流を通じて日本とMITをつなぎます。",
+    "ogDescription": "MIT JAM（Japanese Association of MIT）の公式サイトです。日本とMITを文化、コミュニティ、イベント、スポーツ、学術交流でつなぎます。",
+    "ogImage": "assets/hanami/hanami-hall.jpg",
+    "ogImageAlt": "MITの花見フェスティバルに集まるJAMメンバーと来場者"
+  },
+  "heroSlides": [
+    {
+      "className": "hero-slide-hanami",
+      "image": "assets/hanami/hanami-hall.jpg",
+      "alt": "Walker Memorialで開催された花見フェスティバルの様子",
+      "active": true
+    },
+    {
+      "className": "hero-slide-wave",
+      "image": "assets/great-wave.jpg",
+      "alt": "葛飾北斎『神奈川沖浪裏』"
+    },
+    {
+      "className": "hero-slide-basketball",
+      "image": "assets/derived/basketball-club.jpg",
+      "alt": "MITの体育館で活動するJAM Basketball Club"
+    },
+    {
+      "className": "hero-slide-hanami-people",
+      "image": "assets/hanami/hanami-dscf6960.jpg",
+      "alt": "花見フェスティバルで交流するJAMメンバーと来場者"
+    },
+    {
+      "className": "hero-slide-hanami-calligraphy",
+      "image": "assets/hanami/hanami-dscf7049.jpg",
+      "alt": "花見フェスティバルの書道ブースと来場者"
+    },
+    {
+      "className": "hero-slide-hanami-family",
+      "image": "assets/hanami/hanami-dscf7011.jpg",
+      "alt": "花見フェスティバルのテーブルで遊ぶ子ども"
+    }
+  ],
+  "welcome": {
+    "heading": "ようこそ",
+    "lead": "日本とMITをつなぐ。",
+    "body": "JAM（Japanese Association of MIT）は、日本文化の紹介、MITコミュニティ内の交流、そして日本に根ざした視点からの学術的な対話を支える団体です。",
+    "buttonLabel": "開催中のイベントを見る",
+    "buttonHref": "#events"
+  },
+  "historyBand": {
+    "heading": "1900年代から続くMITの日本人会。",
+    "paragraphs": [
+      "JAMは歴史的にはMITの日本人PhD学生の小さなコミュニティとして始まりました。当時、MIT全体の日本人PhD学生はおよそ20名ほどでした。現在のJAMイベントは、より広いMITコミュニティに開かれています。"
+    ],
+    "linkLabel": "JAM規約 →",
+    "linkHref": "assets/JAM_Constitution.pdf"
+  },
+  "mission": {
+    "kicker": "目的",
+    "heading": "JAMが目指すこと。",
+    "note": "以下のミッションはJAM規約に基づき、MIT、日本、そして相互交流を中心に据えています。",
+    "items": [
+      {
+        "title": "文化",
+        "body": "MITコミュニティに日本文化を紹介し、広めること。"
+      },
+      {
+        "title": "コミュニティ",
+        "body": "MITの大学院生、ポスドク、研究者、その他のコミュニティメンバーの間で、社会的なつながりと文化交流を育むこと。"
+      },
+      {
+        "title": "学術交流",
+        "body": "MITのエコシステムの中で、日本の視点に根ざした学術的な発信と協働を促進すること。"
+      }
+    ]
+  },
+  "officersIntro": {
+    "heading": "JAM運営メンバー。",
+    "body": "2025-2026年度のJAM運営メンバーです。ここに掲載しているのはJAMプログラムを企画・運営する現在の運営メンバーであり、jam-all全体のメンバーではありません。運営メンバーはMITの大学院生、ポスドク、研究者、MITで学ぶHarvard大学院生、およびその家族に開かれています。",
+    "linkLabel": "運営参加に興味がある方 →",
+    "linkHref": "mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM"
+  },
+  "recognitionBand": {
+    "heading": "大学院生を中心に、MITに根ざした団体です。",
+    "paragraphs": [
+      {
+        "html": "運営チームはMITの大学院生、ポスドク、研究者、MITで学ぶHarvard大学院生、およびその家族に開かれています。JAMはMITの<a href=\"https://asa.mit.edu/about-asa/\">Association of Student Activities（ASA）公認団体</a>であり、学生自治上は<a href=\"https://gsc.mit.edu/\">Graduate Student Council（GSC）</a>を母体としています。"
+      }
+    ],
+    "linkLabel": "運営メンバーに参加する →",
+    "linkHref": "mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM"
+  },
+  "activitiesIntro": {
+    "heading": "MITコミュニティのためのイベント",
+    "body": "JAMのプログラムは運営チームが企画・運営し、イベント自体はより広いMITコミュニティに向けて開かれています。"
+  },
+  "newsletter": {
+    "heading": "JAMの更新を受け取る。",
+    "body": "jam-allは、MITコミュニティ内外のJAMメンバー・友人800名以上につながるメーリングリストです。",
+    "primaryLabel": "jam-allに参加",
+    "primaryHref": "https://docs.google.com/forms/d/e/1FAIpQLSfAS_hkPno6dewLlewlzrTyg8A7t59hIbqibPIAspVf-8z_nA/viewform?usp=dialog",
+    "secondaryLabel": "運営メンバーとして参加",
+    "secondaryHref": "mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM"
+  },
+  "support": {
+    "kicker": "支援",
+    "heading": "JAMと連携する。",
+    "paragraphs": [
+      "JAMへの支援は、主に個別イベントごとに組まれています。近年のJAMプログラムは、MIT SGFC Funding、MIT School of Quality of Life Grant Program、Taktopia、GPI-USなどから支援を受けています。Beneath the Great Waveは在ボストン日本国総領事館の後援を受けています。",
+      "JAMは、文化プログラム、講演会、新入生歓迎イベント、コミュニティ活動を支えてくださる新しい企業・団体パートナーも歓迎しています。"
+    ],
+    "buttonLabel": "イベント協賛について問い合わせる",
+    "buttonHref": "mailto:jam-hq@mit.edu?subject=JAM%20sponsorship%20inquiry"
+  },
+  "footer": {
+    "privacyHref": "privacy.html",
+    "constitutionHref": "assets/JAM_Constitution.pdf",
+    "mitUrl": "https://www.mit.edu/",
+    "asaUrl": "https://asa.mit.edu/about-asa/",
+    "gscUrl": "https://gsc.mit.edu/"
+  },
+  "footerLabels": {
+    "footerNavigation": "フッターナビゲーション",
+    "footerBrandAlt": "Japanese Association of MIT",
+    "mitLabel": "Massachusetts Institute of Technology",
+    "privacy": "プライバシーポリシー",
+    "constitution": "規約",
+    "contact": "お問い合わせ",
+    "affiliationHtml": "JAMはMITの<a href=\"https://asa.mit.edu/about-asa/\">Association of Student Activities（ASA）公認団体</a>であり、学生自治上はMITの<a href=\"https://gsc.mit.edu/\">Graduate Student Council（GSC）</a>を母体としています。"
+  }
+}

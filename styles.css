@@ -117,6 +117,28 @@ h3 {
   background: var(--blue);
 }
 
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  border: 2px solid var(--ink);
+  line-height: 1;
+}
+
+.jam-actions .language-switch a,
+.language-switch span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 9px;
+  text-decoration: none;
+}
+
+.language-switch span {
+  background: var(--ink);
+  color: var(--paper);
+}
+
 .jam-nav {
   display: flex;
   align-items: center;

@@ -1,0 +1,45 @@
+[
+  {
+    "slug": "hanami",
+    "title": "花見フェスティバル",
+    "metaDescription": "MIT JAMの花見フェスティバル。2026年は週末の雨にもかかわらず約350名が参加しました。",
+    "keywords": "花見 フェスティバル 2026 寿司 雨 350 将棋 折り紙 書道 けん玉 Walker Memorial",
+    "homeCard": {
+      "title": "花見フェスティバル2026",
+      "subtitle": "終了・2026年5月9日",
+      "alt": "Walker Memorialに集まった花見フェスティバルの来場者"
+    }
+  },
+  {
+    "slug": "beneath-great-wave",
+    "title": "Beneath the Great Wave",
+    "metaDescription": "日本、津波科学、防災、インフラ、レジリエンスを扱うMIT JAMの講演・パネルイベント。",
+    "keywords": "Beneath the Great Wave 津波 科学 防災 インフラ レジリエンス 日本 寿司 お茶 RSVP",
+    "homeCard": {
+      "title": "Beneath the Great Wave",
+      "subtitle": "2026年5月22日",
+      "alt": "葛飾北斎『神奈川沖浪裏』"
+    }
+  },
+  {
+    "slug": "orientation",
+    "title": "MIT新入生オリエンテーション",
+    "metaDescription": "MIT JAMによる新入生向けオリエンテーションページ。",
+    "keywords": "オリエンテーション 新入生 MIT 生活 相談 コミュニティ",
+    "homeCard": {
+      "title": "MIT新入生オリエンテーション",
+      "subtitle": "初秋",
+      "alt": "花見フェスティバルのテーブルで遊ぶ子ども"
+    }
+  },
+  {
+    "slug": "basketball-club",
+    "title": "バスケットボールクラブ",
+    "keywords": "バスケットボール クラブ 週末 コミュニティ",
+    "homeCard": {
+      "title": "バスケットボールクラブ",
+      "subtitle": "週末のコミュニティ活動",
+      "alt": "MITの体育館で活動するJAM Basketball Club"
+    }
+  }
+]

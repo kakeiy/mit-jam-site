@@ -10,6 +10,15 @@ const today = new Date().toISOString().slice(0, 10);
 const readJson = async (name) =>
   JSON.parse(await readFile(join(contentDir, name), "utf8"));
 
+const readOptionalJson = async (name, fallback) => {
+  try {
+    return await readJson(name);
+  } catch (error) {
+    if (error.code === "ENOENT") return fallback;
+    throw error;
+  }
+};
+
 const escapeHtml = (value = "") =>
   String(value)
     .replaceAll("&", "&amp;")
@@ -39,6 +48,26 @@ const absoluteUrl = (site, value = "") => {
 
 const paragraphList = (paragraphs = []) =>
   paragraphs.map((paragraph) => `<p>${rich(paragraph)}</p>`).join("\n");
+
+const mergeBySlug = (items, overrides) => {
+  const overrideMap = new Map(overrides.map((item) => [item.slug, item]));
+  return items.map((item) => ({
+    ...item,
+    ...(overrideMap.get(item.slug) || {}),
+    homeCard: {
+      ...(item.homeCard || {}),
+      ...(overrideMap.get(item.slug)?.homeCard || {})
+    }
+  }));
+};
+
+const mergeByName = (items, overrides) => {
+  const overrideMap = new Map(overrides.map((item) => [item.name, item]));
+  return items.map((item) => ({
+    ...item,
+    ...(overrideMap.get(item.name) || {})
+  }));
+};
 
 const actionLinks = (actions = [], prefix = "") => {
   if (!actions.length) return "";
@@ -101,61 +130,99 @@ const jsonLd = (site) => `<script type="application/ld+json">
       }
     </script>`;
 
-const renderHeader = (site, prefix = "", { activeEvents = false } = {}) => {
+const renderHeader = (site, prefix = "", { activeEvents = false, languageSwitch = null } = {}) => {
   const homeHref = prefix ? `${prefix}index.html#top` : "#top";
   const navHome = (hash) => (prefix ? `${prefix}index.html${hash}` : hash);
+  const aria = {
+    home: "Japanese Association of MIT home",
+    quickActions: "Quick actions",
+    primaryNavigation: "Primary navigation",
+    ...(site.ariaLabels || {})
+  };
+  const nav = {
+    about: "About",
+    events: "Exhibitions and events",
+    officers: "Officers",
+    activities: "Activities",
+    support: "Support",
+    archive: "Archive",
+    searchLabel: "Search JAM site",
+    ...(site.nav || {})
+  };
+  const actions = {
+    contact: "Contact",
+    join: "Join us",
+    updates: "Get updates",
+    ...(site.actions || {})
+  };
   return `<header class="jam-header">
       <div class="jam-header-top">
-        <a class="jam-logo" href="${homeHref}" aria-label="Japanese Association of MIT home">
+        <a class="jam-logo" href="${homeHref}" aria-label="${escapeHtml(aria.home)}">
           <img src="${rootPath(prefix, "assets/logos/jam-logo-main-trim.png")}" alt="JAM">
         </a>
-        <div class="jam-actions" aria-label="Quick actions">
-          <a href="mailto:${escapeHtml(site.contactEmail)}">Contact</a>
-          <a class="action-muted" href="${escapeHtml(site.officerInterestUrl)}">Join us</a>
-          <a class="action-blue" href="${escapeHtml(site.updatesUrl)}">Get updates</a>
+        <div class="jam-actions" aria-label="${escapeHtml(aria.quickActions)}">
+          <a href="mailto:${escapeHtml(site.contactEmail)}">${escapeHtml(actions.contact)}</a>
+          <a class="action-muted" href="${escapeHtml(site.officerInterestUrl)}">${escapeHtml(actions.join)}</a>
+          <a class="action-blue" href="${escapeHtml(site.updatesUrl)}">${escapeHtml(actions.updates)}</a>${languageSwitch ? `
+          <div class="language-switch" aria-label="${escapeHtml(languageSwitch.label || "Language")}">
+            ${languageSwitch.current === "en" ? `<span aria-current="true">EN</span>` : `<a href="${escapeHtml(rootPath(prefix, languageSwitch.enHref || "index.html"))}">EN</a>`}
+            ${languageSwitch.current === "ja" ? `<span aria-current="true">JP</span>` : `<a href="${escapeHtml(rootPath(prefix, languageSwitch.jaHref || "index-ja.html"))}">JP</a>`}
+          </div>` : ""}
         </div>
       </div>
-      <nav class="jam-nav" aria-label="Primary navigation">
-        <a href="${navHome("#about")}">About</a>
-        <a href="${navHome("#events")}"${activeEvents ? ' aria-current="true"' : ""}>Exhibitions and events</a>
-        <a href="${navHome("#people")}">Officers</a>
-        <a href="${navHome("#activities")}">Activities</a>
-        <a href="${navHome("#support")}">Support</a>
-        <a href="${prefix ? "index.html" : "events/"}">Archive</a>
-        <button class="nav-search" type="button" aria-label="Search JAM site" data-search-open>⌕</button>
+      <nav class="jam-nav" aria-label="${escapeHtml(aria.primaryNavigation)}">
+        <a href="${navHome("#about")}">${escapeHtml(nav.about)}</a>
+        <a href="${navHome("#events")}"${activeEvents ? ' aria-current="true"' : ""}>${escapeHtml(nav.events)}</a>
+        <a href="${navHome("#people")}">${escapeHtml(nav.officers)}</a>
+        <a href="${navHome("#activities")}">${escapeHtml(nav.activities)}</a>
+        <a href="${navHome("#support")}">${escapeHtml(nav.support)}</a>
+        <a href="${prefix ? "index.html" : "events/"}">${escapeHtml(nav.archive)}</a>
+        <button class="nav-search" type="button" aria-label="${escapeHtml(nav.searchLabel)}" data-search-open>⌕</button>
       </nav>
     </header>`;
 };
 
 const renderFooter = (site, prefix = "", { includeAllEvents = false, homeFooter = false } = {}) => {
   const footerClass = homeFooter ? "jam-footer" : "site-footer";
+  const labels = {
+    allEvents: "All events",
+    privacy: "Privacy Policy",
+    constitution: "Constitution",
+    contact: "Contact",
+    footerNavigation: "Footer navigation",
+    footerBrandAlt: "Japanese Association of MIT",
+    mitLabel: "Massachusetts Institute of Technology",
+    affiliationHtml:
+      `JAM is an <a href="${escapeHtml(site.footer.asaUrl)}">Association of Student Activities (ASA)-recognized organization</a> with its student governance home in the <a href="${escapeHtml(site.footer.gscUrl)}">Graduate Student Council (GSC)</a> of MIT.`,
+    ...(site.footerLabels || {})
+  };
   const links = [
-    ...(includeAllEvents ? [{ label: "All events", href: "index.html" }] : []),
-    { label: "Privacy Policy", href: rootPath(prefix, site.footer.privacyHref) },
-    { label: "Constitution", href: rootPath(prefix, site.footer.constitutionHref) },
-    { label: "Contact", href: `mailto:${site.contactEmail}` }
+    ...(includeAllEvents ? [{ label: labels.allEvents, href: "index.html" }] : []),
+    { label: labels.privacy, href: rootPath(prefix, site.footer.privacyHref) },
+    { label: labels.constitution, href: rootPath(prefix, site.footer.constitutionHref) },
+    { label: labels.contact, href: `mailto:${site.contactEmail}` }
   ];
 
   return `<footer class="${footerClass}">
       <div class="footer-brand">
-        <img src="${rootPath(prefix, "assets/logos/jam-logo-main-trim.png")}" alt="Japanese Association of MIT">
+        <img src="${rootPath(prefix, "assets/logos/jam-logo-main-trim.png")}" alt="${escapeHtml(labels.footerBrandAlt)}">
       </div>
-      <nav class="footer-links" aria-label="Footer navigation">
+      <nav class="footer-links" aria-label="${escapeHtml(labels.footerNavigation)}">
 ${links.map((link) => `        <a href="${escapeHtml(link.href)}">${escapeHtml(link.label)}</a>`).join("\n")}
       </nav>
       <div class="mit-affiliation">
-        <a class="mit-lockup" href="${escapeHtml(site.footer.mitUrl)}" aria-label="Massachusetts Institute of Technology">
+        <a class="mit-lockup" href="${escapeHtml(site.footer.mitUrl)}" aria-label="${escapeHtml(labels.mitLabel)}">
           <img src="${rootPath(prefix, "assets/logos/mit_logo_black.png")}" alt="MIT">
-          <span>Massachusetts Institute of Technology</span>
+          <span>${escapeHtml(labels.mitLabel)}</span>
         </a>
-        <p>JAM is an <a href="${escapeHtml(site.footer.asaUrl)}">Association of Student Activities (ASA)-recognized organization</a> with its student governance home in the <a href="${escapeHtml(site.footer.gscUrl)}">Graduate Student Council (GSC)</a> of MIT.</p>
+        <p>${labels.affiliationHtml}</p>
       </div>
     </footer>`;
 };
 
-const pageShell = ({ site, prefix = "", page, canonicalPath, ogType, body, extraHead = "" }) => `<!doctype html>
+const pageShell = ({ site, prefix = "", page, canonicalPath, ogType, body, extraHead = "", lang = "en" }) => `<!doctype html>
 <!-- Generated by npm run build. Edit content/*.json instead of this file. -->
-<html lang="en">
+<html lang="${escapeHtml(lang)}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -196,15 +263,25 @@ ${items
   .join("\n")}
         </div>`;
 
-const renderHome = ({ site, events, officers, activities, supporters }) => {
+const renderHome = ({ site, events, officers, activities, supporters, lang = "en", canonicalPath = "", languageSwitch = null }) => {
   const homeCards = events
     .filter((event) => event.homeCard?.enabled)
     .sort((a, b) => (a.homeCard.order ?? 0) - (b.homeCard.order ?? 0));
 
-  const body = `    ${renderHeader(site)}
+  const sectionLabels = {
+    exhibitions: "Exhibitions",
+    previousExhibition: "Previous exhibition",
+    nextExhibition: "Next exhibition",
+    exhibitionControls: "Exhibition carousel controls",
+    heroHighlights: "JAM visual highlights",
+    supportersLabel: "Current and recent supporters",
+    ...(site.sectionLabels || {})
+  };
+
+  const body = `    ${renderHeader(site, "", { languageSwitch })}
 
     <main id="top">
-      <section class="jam-hero jam-hero-art" aria-label="JAM visual highlights" data-hero-slideshow>
+      <section class="jam-hero jam-hero-art" aria-label="${escapeHtml(sectionLabels.heroHighlights)}" data-hero-slideshow>
 ${site.heroSlides
   .map(
     (slide) => `        <figure class="hero-slide ${escapeHtml(slide.className || "")}${slide.active ? " is-active" : ""}" data-hero-slide>
@@ -227,10 +304,10 @@ ${site.heroSlides
 
       <section class="jam-section exhibitions-section" id="events" aria-labelledby="events-title">
         <div class="section-title-row">
-          <h2 id="events-title">Exhibitions</h2>
-          <div class="section-arrows" aria-label="Exhibition carousel controls">
-            <button type="button" data-rail-prev aria-label="Previous exhibition">←</button>
-            <button type="button" data-rail-next aria-label="Next exhibition">→</button>
+          <h2 id="events-title">${escapeHtml(sectionLabels.exhibitions)}</h2>
+          <div class="section-arrows" aria-label="${escapeHtml(sectionLabels.exhibitionControls)}">
+            <button type="button" data-rail-prev aria-label="${escapeHtml(sectionLabels.previousExhibition)}">←</button>
+            <button type="button" data-rail-next aria-label="${escapeHtml(sectionLabels.nextExhibition)}">→</button>
           </div>
         </div>
         <div class="exhibition-rail">
@@ -331,7 +408,7 @@ ${activities
         </div>
         <div>
           ${paragraphList(site.support.paragraphs)}
-          <ul class="support-list" aria-label="Current and recent supporters">
+          <ul class="support-list" aria-label="${escapeHtml(sectionLabels.supportersLabel)}">
 ${supporters.map((supporter) => `            <li>${escapeHtml(supporter)}</li>`).join("\n")}
           </ul>
           <a class="black-button" href="${escapeHtml(site.support.buttonHref)}">${escapeHtml(site.support.buttonLabel)}</a>
@@ -344,11 +421,14 @@ ${renderFooter(site, "", { homeFooter: true })}`;
   return pageShell({
     site,
     page: site.home,
-    canonicalPath: "",
+    canonicalPath,
     body,
     extraHead: `<link rel="preload" href="assets/logos/jam-logo-main-trim.png" as="image">
+    <link rel="alternate" hreflang="en" href="${escapeHtml(site.baseUrl)}">
+    <link rel="alternate" hreflang="ja" href="${escapeHtml(`${site.baseUrl}index-ja.html`)}">
     <link rel="preload" href="assets/hanami/hanami-hall.jpg" as="image">
-    ${jsonLd(site)}`
+    ${jsonLd(site)}`,
+    lang
   });
 };
 
@@ -547,7 +627,7 @@ ${renderFooter(site, "../", { includeAllEvents: true })}`;
   });
 };
 
-const renderSearchData = ({ site, events }) => {
+const renderSearchData = ({ site, events, eventsJa = [] }) => {
   const eventItems = events
     .filter((event) => event.file)
     .map((event) => ({
@@ -609,12 +689,74 @@ const renderSearchData = ({ site, events }) => {
     }
   ];
 
-  return `window.JAM_SEARCH_INDEX = ${JSON.stringify(index, null, 2)};\n`;
+  const eventItemsJa = eventsJa
+    .filter((event) => event.file)
+    .map((event) => ({
+      title: event.title,
+      url: `events/${event.file}`,
+      description: event.metaDescription,
+      keywords: event.keywords || ""
+    }));
+
+  const indexJa = [
+    {
+      title: "JAMについて",
+      url: "index-ja.html#about",
+      description: "MITの日本人会JAMについて。日本とMITを文化、コミュニティ、イベント、スポーツ、学術交流でつなぎます。",
+      keywords: "JAM 日本人会 MIT 歴史 文化 コミュニティ 交流 ASA GSC"
+    },
+    {
+      title: "展示・イベント",
+      url: "index-ja.html#events",
+      description: "花見フェスティバル、Beneath the Great Wave、オリエンテーション、活動紹介など。",
+      keywords: "イベント 展示 花見 great wave オリエンテーション バスケットボール アーカイブ"
+    },
+    ...eventItemsJa,
+    {
+      title: "MIT公認団体としてのJAM",
+      url: "index-ja.html#recognition",
+      description: "JAMはMITのASA公認団体で、GSCを母体とする大学院生中心の学生団体です。",
+      keywords: "MIT ASA GSC 公認団体 大学院生"
+    },
+    {
+      title: "JAM運営メンバー",
+      url: "index-ja.html#people",
+      description: "現在のJAM officer一覧と運営参加について。",
+      keywords: "officer 運営メンバー 会長 副会長 会計 参加"
+    },
+    {
+      title: "活動",
+      url: "index-ja.html#activities",
+      description: "JAMの文化イベント、バスケットボールクラブ、キャンパスツアー支援など。",
+      keywords: "活動 バスケットボール 文化イベント キャンパスツアー"
+    },
+    {
+      title: "支援・スポンサー",
+      url: "index-ja.html#support",
+      description: "JAMのイベント支援、スポンサー、協力団体について。",
+      keywords: "支援 sponsor スポンサー SGFC Taktopia GPI 領事館"
+    },
+    {
+      title: "JAM Constitution",
+      url: site.footer.constitutionHref,
+      description: "JAM Constitution document.",
+      keywords: "constitution 規約"
+    },
+    {
+      title: "プライバシーポリシー",
+      url: "privacy.html",
+      description: "JAMウェブサイトのプライバシーポリシー。",
+      keywords: "privacy policy プライバシー"
+    }
+  ];
+
+  return `window.JAM_SEARCH_INDEX = ${JSON.stringify(index, null, 2)};\nwindow.JAM_SEARCH_INDEX_JA = ${JSON.stringify(indexJa, null, 2)};\n`;
 };
 
 const renderSitemap = ({ site, events }) => {
   const urls = [
     { loc: site.baseUrl, changefreq: "weekly", priority: "1.0" },
+    { loc: `${site.baseUrl}index-ja.html`, changefreq: "weekly", priority: "0.9" },
     { loc: `${site.baseUrl}events/`, changefreq: "weekly", priority: "0.8" },
     ...events
       .filter((event) => event.file)
@@ -643,17 +785,47 @@ ${urls
 };
 
 const main = async () => {
-  const [site, events, officers, activities, supporters] = await Promise.all([
+  const [site, siteJa, events, eventOverridesJa, officers, officerOverridesJa, activities, activitiesJa, supporters] = await Promise.all([
     readJson("site.json"),
+    readJson("site-ja.json"),
     readJson("events.json"),
+    readOptionalJson("events-ja.json", []),
     readJson("officers.json"),
+    readOptionalJson("officers-ja.json", []),
     readJson("activities.json"),
+    readOptionalJson("activities-ja.json", []),
     readJson("supporters.json")
   ]);
 
+  const eventsJa = mergeBySlug(events, eventOverridesJa);
+  const officersJa = mergeByName(officers, officerOverridesJa);
+
   await mkdir(join(rootDir, "events"), { recursive: true });
 
-  await writeFile(join(rootDir, "index.html"), renderHome({ site, events, officers, activities, supporters }));
+  await writeFile(
+    join(rootDir, "index.html"),
+    renderHome({
+      site,
+      events,
+      officers,
+      activities,
+      supporters,
+      languageSwitch: { current: "en", jaHref: "index-ja.html", label: "Language" }
+    })
+  );
+  await writeFile(
+    join(rootDir, "index-ja.html"),
+    renderHome({
+      site: siteJa,
+      events: eventsJa,
+      officers: officersJa,
+      activities: activitiesJa,
+      supporters,
+      lang: "ja",
+      canonicalPath: "index-ja.html",
+      languageSwitch: { current: "ja", enHref: "index.html", label: "言語" }
+    })
+  );
   await writeFile(join(rootDir, "events", "index.html"), renderEventsIndex({ site, events }));
 
   for (const event of events) {
@@ -661,7 +833,7 @@ const main = async () => {
     await writeFile(join(rootDir, "events", event.file), renderEventPage({ site, event }));
   }
 
-  await writeFile(join(rootDir, "search-data.js"), renderSearchData({ site, events }));
+  await writeFile(join(rootDir, "search-data.js"), renderSearchData({ site, events, eventsJa }));
   await writeFile(join(rootDir, "sitemap.xml"), renderSitemap({ site, events }));
 
   console.log("Built site from content/*.json");

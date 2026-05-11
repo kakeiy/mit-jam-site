@@ -10,7 +10,29 @@ const sitePrefix = document.currentScript?.getAttribute("src")?.startsWith("../"
   ? "../"
   : "";
 
-const searchIndex = window.JAM_SEARCH_INDEX || [];
+const searchLocale = document.documentElement.lang?.toLowerCase().startsWith("ja")
+  ? "ja"
+  : "en";
+const searchIndex =
+  searchLocale === "ja"
+    ? window.JAM_SEARCH_INDEX_JA || window.JAM_SEARCH_INDEX || []
+    : window.JAM_SEARCH_INDEX || [];
+const searchCopy = {
+  en: {
+    title: "Search JAM",
+    placeholder: "Hanami, officers, RSVP...",
+    closeLabel: "Close search",
+    noResults: "No results. Try “Hanami”, “RSVP”, “officers”, or “constitution”.",
+    open: "Open",
+  },
+  ja: {
+    title: "JAMサイト内検索",
+    placeholder: "花見、運営メンバー、RSVP...",
+    closeLabel: "検索を閉じる",
+    noResults: "見つかりませんでした。「花見」「RSVP」「運営メンバー」「規約」などで検索してください。",
+    open: "開く",
+  },
+}[searchLocale];
 
 const scrollToHashTarget = (hash) => {
   const target = document.querySelector(hash);
@@ -41,10 +63,10 @@ const createSearchPanel = () => {
     <div class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="site-search-title">
       <div class="search-top">
         <div>
-          <label class="search-title" id="site-search-title" for="site-search-input">Search JAM</label>
-          <input class="search-input" id="site-search-input" data-search-input type="search" autocomplete="off" placeholder="Hanami, officers, RSVP...">
+          <label class="search-title" id="site-search-title" for="site-search-input">${searchCopy.title}</label>
+          <input class="search-input" id="site-search-input" data-search-input type="search" autocomplete="off" placeholder="${searchCopy.placeholder}">
         </div>
-        <button class="search-close" type="button" aria-label="Close search" data-search-close>×</button>
+        <button class="search-close" type="button" aria-label="${searchCopy.closeLabel}" data-search-close>×</button>
       </div>
       <div class="search-results" data-search-results></div>
     </div>
@@ -78,7 +100,7 @@ const initializeSearch = () => {
     const shown = matches.slice(0, tokens.length ? 9 : 5);
 
     if (!shown.length) {
-      results.innerHTML = `<p class="search-empty">No results. Try “Hanami”, “RSVP”, “officers”, or “constitution”.</p>`;
+      results.innerHTML = `<p class="search-empty">${searchCopy.noResults}</p>`;
       return;
     }
 
@@ -87,7 +109,7 @@ const initializeSearch = () => {
         (item) => `
           <a class="search-result" href="${resolveSiteUrl(item.url)}">
             <span><strong>${item.title}</strong>${item.description}</span>
-            <em>Open</em>
+            <em>${searchCopy.open}</em>
           </a>
         `
       )

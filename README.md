@@ -19,10 +19,14 @@ The original selected source photos in `Photos-3-001/` are intentionally ignored
 Most updates should not require touching HTML or CSS.
 
 - Add or edit event cards and event pages in `content/events.json`.
+- Update Japanese homepage event labels in `content/events-ja.json`.
 - Update officers in `content/officers.json`.
+- Update Japanese officer role labels in `content/officers-ja.json`.
 - Update homepage activity cards in `content/activities.json`.
+- Update Japanese homepage activity cards in `content/activities-ja.json`.
 - Update sponsor/supporter names in `content/supporters.json`.
 - Update global copy, navigation actions, hero slides, mission text, and footer URLs in `content/site.json`.
+- Update Japanese homepage copy in `content/site-ja.json`.
 
 After editing JSON, run:
 
@@ -33,6 +37,7 @@ npm run build
 This regenerates:
 
 - `index.html`
+- `index-ja.html`
 - `events/index.html`
 - `events/*.html`
 - `search-data.js`
