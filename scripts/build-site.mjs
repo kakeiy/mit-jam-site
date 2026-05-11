@@ -164,10 +164,7 @@ const renderHeader = (site, prefix = "", { activeEvents = false, languageSwitch 
           <a href="mailto:${escapeHtml(site.contactEmail)}">${escapeHtml(actions.contact)}</a>
           <a class="action-muted" href="${escapeHtml(site.officerInterestUrl)}">${escapeHtml(actions.join)}</a>
           <a class="action-blue" href="${escapeHtml(site.updatesUrl)}">${escapeHtml(actions.updates)}</a>${languageSwitch ? `
-          <div class="language-switch" aria-label="${escapeHtml(languageSwitch.label || "Language")}">
-            ${languageSwitch.current === "en" ? `<span aria-current="true">EN</span>` : `<a href="${escapeHtml(rootPath(prefix, languageSwitch.enHref || "index.html"))}">EN</a>`}
-            ${languageSwitch.current === "ja" ? `<span aria-current="true">JP</span>` : `<a href="${escapeHtml(rootPath(prefix, languageSwitch.jaHref || "index-ja.html"))}">JP</a>`}
-          </div>` : ""}
+          <a class="language-switch" href="${escapeHtml(rootPath(prefix, languageSwitch.current === "ja" ? languageSwitch.enHref || "index.html" : languageSwitch.jaHref || "index-ja.html"))}" aria-label="${escapeHtml(languageSwitch.label || "Switch language")}">EN/JP</a>` : ""}
         </div>
       </div>
       <nav class="jam-nav" aria-label="${escapeHtml(aria.primaryNavigation)}">

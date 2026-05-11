@@ -9,7 +9,7 @@
   "actions": {
     "contact": "お問い合わせ",
     "join": "運営に参加",
-    "updates": "更新を受け取る"
+    "updates": "お知らせ登録"
   },
   "ariaLabels": {
     "home": "Japanese Association of MIT ホーム",
@@ -18,7 +18,7 @@
   },
   "nav": {
     "about": "JAMについて",
-    "events": "展示・イベント",
+    "events": "イベント",
     "officers": "運営メンバー",
     "activities": "活動",
     "support": "支援",
@@ -26,10 +26,10 @@
     "searchLabel": "JAMサイト内検索"
   },
   "sectionLabels": {
-    "exhibitions": "展示",
-    "previousExhibition": "前の展示",
-    "nextExhibition": "次の展示",
-    "exhibitionControls": "展示カードの操作",
+    "exhibitions": "イベント",
+    "previousExhibition": "前のイベント",
+    "nextExhibition": "次のイベント",
+    "exhibitionControls": "イベントカードの操作",
     "heroHighlights": "JAMの写真ハイライト",
     "supportersLabel": "現在・過去の支援団体"
   },
@@ -75,36 +75,36 @@
     }
   ],
   "welcome": {
-    "heading": "ようこそ",
-    "lead": "日本とMITをつなぐ。",
-    "body": "JAM（Japanese Association of MIT）は、日本文化の紹介、MITコミュニティ内の交流、そして日本に根ざした視点からの学術的な対話を支える団体です。",
-    "buttonLabel": "開催中のイベントを見る",
+    "heading": "JAMへようこそ",
+    "lead": "MITから、日本とつながる。",
+    "body": "JAM（Japanese Association of MIT）は、MITのなかで日本文化、コミュニティ、学術的な対話を育ててきた日本人会です。",
+    "buttonLabel": "イベントを見る",
     "buttonHref": "#events"
   },
   "historyBand": {
-    "heading": "1900年代から続くMITの日本人会。",
+    "heading": "MITで受け継がれてきた、日本人コミュニティの場。",
     "paragraphs": [
-      "JAMは歴史的にはMITの日本人PhD学生の小さなコミュニティとして始まりました。当時、MIT全体の日本人PhD学生はおよそ20名ほどでした。現在のJAMイベントは、より広いMITコミュニティに開かれています。"
+      "JAMの始まりは、MITで学ぶ日本人PhD学生たちの小さなつながりでした。当時、日本人PhD学生は全学でもおよそ20名ほど。いまのJAMは、その歴史を受け継ぎながら、より広いMITコミュニティに開かれた活動を続けています。"
     ],
     "linkLabel": "JAM規約 →",
     "linkHref": "assets/JAM_Constitution.pdf"
   },
   "mission": {
     "kicker": "目的",
-    "heading": "JAMが目指すこと。",
-    "note": "以下のミッションはJAM規約に基づき、MIT、日本、そして相互交流を中心に据えています。",
+    "heading": "文化・つながり・学びを、MITの中で。",
+    "note": "JAMの活動は、MITと日本のあいだにある人、文化、知をつなぐことから始まります。",
     "items": [
       {
-        "title": "文化",
-        "body": "MITコミュニティに日本文化を紹介し、広めること。"
+        "title": "日本文化を届ける",
+        "body": "MITコミュニティに、日本文化を見て、触れて、話せる機会をつくります。"
       },
       {
-        "title": "コミュニティ",
-        "body": "MITの大学院生、ポスドク、研究者、その他のコミュニティメンバーの間で、社会的なつながりと文化交流を育むこと。"
+        "title": "つながりを育てる",
+        "body": "大学院生、ポスドク、研究者、家族、友人が自然に出会える場をつくります。"
       },
       {
-        "title": "学術交流",
-        "body": "MITのエコシステムの中で、日本の視点に根ざした学術的な発信と協働を促進すること。"
+        "title": "日本から考える",
+        "body": "日本に根ざした視点から、MITの中で学術的な発信と協働を広げます。"
       }
     ]
   },
@@ -115,7 +115,7 @@
     "linkHref": "mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM"
   },
   "recognitionBand": {
-    "heading": "大学院生を中心に、MITに根ざした団体です。",
+    "heading": "運営は大学院生・研究者を中心に。",
     "paragraphs": [
       {
         "html": "運営チームはMITの大学院生、ポスドク、研究者、MITで学ぶHarvard大学院生、およびその家族に開かれています。JAMはMITの<a href=\"https://asa.mit.edu/about-asa/\">Association of Student Activities（ASA）公認団体</a>であり、学生自治上は<a href=\"https://gsc.mit.edu/\">Graduate Student Council（GSC）</a>を母体としています。"
@@ -125,25 +125,25 @@
     "linkHref": "mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM"
   },
   "activitiesIntro": {
-    "heading": "MITコミュニティのためのイベント",
+    "heading": "MITコミュニティに開かれた場をつくる。",
     "body": "JAMのプログラムは運営チームが企画・運営し、イベント自体はより広いMITコミュニティに向けて開かれています。"
   },
   "newsletter": {
-    "heading": "JAMの更新を受け取る。",
-    "body": "jam-allは、MITコミュニティ内外のJAMメンバー・友人800名以上につながるメーリングリストです。",
-    "primaryLabel": "jam-allに参加",
+    "heading": "JAMとつながる。",
+    "body": "jam-allは、MITコミュニティ内外のJAMメンバー・友人800名以上につながるメーリングリストです。イベント案内やコミュニティのお知らせを受け取れます。",
+    "primaryLabel": "お知らせ登録",
     "primaryHref": "https://docs.google.com/forms/d/e/1FAIpQLSfAS_hkPno6dewLlewlzrTyg8A7t59hIbqibPIAspVf-8z_nA/viewform?usp=dialog",
     "secondaryLabel": "運営メンバーとして参加",
     "secondaryHref": "mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM"
   },
   "support": {
     "kicker": "支援",
-    "heading": "JAMと連携する。",
+    "heading": "JAMを一緒に支える。",
     "paragraphs": [
       "JAMへの支援は、主に個別イベントごとに組まれています。近年のJAMプログラムは、MIT SGFC Funding、MIT School of Quality of Life Grant Program、Taktopia、GPI-USなどから支援を受けています。Beneath the Great Waveは在ボストン日本国総領事館の後援を受けています。",
       "JAMは、文化プログラム、講演会、新入生歓迎イベント、コミュニティ活動を支えてくださる新しい企業・団体パートナーも歓迎しています。"
     ],
-    "buttonLabel": "イベント協賛について問い合わせる",
+    "buttonLabel": "協賛・連携について相談する",
     "buttonHref": "mailto:jam-hq@mit.edu?subject=JAM%20sponsorship%20inquiry"
   },
   "footer": {
