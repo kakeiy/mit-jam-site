@@ -104,6 +104,7 @@ The event template supports these optional keys inside `page`:
 - `report` for a closed-event report section.
 - `mealBand` for a green food/drink highlight band.
 - `speakers` for a speaker grid.
+  - Speaker items can include optional `japaneseName`, `image`, `imageAlt`, and `bio` fields.
 - `supportNote` for event sponsor/support text.
 - `gallery` for a photo gallery.
 

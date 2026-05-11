@@ -21,7 +21,7 @@ window.JAM_SEARCH_INDEX = [
     "title": "Beneath the Great Wave",
     "url": "events/beneath-great-wave.html",
     "description": "Beneath the Great Wave is an MIT JAM event on Japan, tsunami science, disaster management, infrastructure, and resilience.",
-    "keywords": "great wave rsvp tsunami science resilience japan consulate stata disaster sushi o-i ocha"
+    "keywords": "great wave rsvp tsunami science resilience japan consulate stata disaster sushi o-i ocha kenji takahashi 高橋謙司 cabinet office regional revitalization disaster management"
   },
   {
     "title": "MIT New Student Orientation",

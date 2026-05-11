@@ -975,6 +975,24 @@ h3 {
   line-height: 1;
 }
 
+.speaker-portrait {
+  display: block;
+  width: 92px;
+  aspect-ratio: 223 / 271;
+  margin: 0 0 16px;
+  object-fit: cover;
+  background: var(--soft);
+}
+
+.speaker-grid .speaker-name-jp {
+  margin-top: -4px;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: var(--label-weight);
+  line-height: 1.1;
+}
+
 .program-grid p,
 .speaker-grid p,
 .constitution-grid p,

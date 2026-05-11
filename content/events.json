@@ -152,7 +152,7 @@
     "ogDescription": "An MIT JAM event on Japan, tsunami science, disaster management, infrastructure, and resilience.",
     "ogImage": "assets/beneath-great-wave-flyer.png",
     "ogImageAlt": "Beneath the Great Wave MIT JAM event flyer",
-    "keywords": "great wave rsvp tsunami science resilience japan consulate stata disaster sushi o-i ocha",
+    "keywords": "great wave rsvp tsunami science resilience japan consulate stata disaster sushi o-i ocha kenji takahashi 高橋謙司 cabinet office regional revitalization disaster management",
     "homeCard": {
       "enabled": true,
       "order": 20,
@@ -255,9 +255,13 @@
             "body": "Japan Meteorological Agency, Seismology and Volcanology Department."
           },
           {
-            "label": "Disaster management",
+            "label": "Regional revitalization / disaster management",
             "name": "Kenji Takahashi",
-            "body": "Former Director-General for Disaster Management, Cabinet Office; former MLIT Deputy Vice-Minister for Policy Coordination."
+            "japaneseName": "高橋謙司",
+            "image": "assets/speakers/kenji-takahashi.png",
+            "imageAlt": "Kenji Takahashi",
+            "body": "Secretary General for Regional Revitalization, Cabinet Office, Government of Japan; former Director-General for Disaster Management, Cabinet Office.",
+            "bio": "Originally from Aichi Prefecture, Takahashi graduated from Kyoto University's Faculty of Law and joined the Ministry of Construction in 1991. His public service career includes senior roles at the Ministry of Health, Labour and Welfare, the Prime Minister's Office, the Ministry of Land, Infrastructure, Transport and Tourism, and the Cabinet Office, including Director-General for Disaster Management. Since July 2025, he has served as Secretary General for Regional Revitalization, Cabinet Office, Government of Japan."
           }
         ]
       },

@@ -586,9 +586,9 @@ ${page.gallery
         <div class="speaker-grid">
 ${page.speakers.items
   .map(
-    (speaker) => `          <article>
-            <span>${escapeHtml(speaker.label)}</span>
-            <h3>${escapeHtml(speaker.name)}</h3>
+    (speaker) => `          <article${speaker.className ? ` class="${escapeHtml(speaker.className)}"` : ""}>
+            ${speaker.image ? `<img class="speaker-portrait" src="${rootPath("../", speaker.image)}" alt="${escapeHtml(speaker.imageAlt || speaker.name)}" loading="lazy">\n            ` : ""}<span>${escapeHtml(speaker.label)}</span>
+            <h3>${escapeHtml(speaker.name)}</h3>${speaker.japaneseName ? `\n            <p class="speaker-name-jp">${escapeHtml(speaker.japaneseName)}</p>` : ""}
             <p>${escapeHtml(speaker.body)}</p>${speaker.bio ? `\n            <p class="speaker-bio">${escapeHtml(speaker.bio)}</p>` : ""}
           </article>`
   )
