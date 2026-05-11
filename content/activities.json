@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Annual cultural programming",
+    "body": "Recurring programs that can grow year by year, from Hanami to lecture-style events such as Beneath the Great Wave.",
+    "image": "assets/hanami/hanami-shogi.jpg",
+    "alt": "Students and visitors playing shogi at Hanami Festival"
+  },
+  {
+    "title": "Basketball Club",
+    "body": "About 30 members play street basketball most weekends, join MIT intramural play, and face Boston Japan Basketball Club several times a year.",
+    "image": "assets/derived/basketball-club.jpg",
+    "alt": "JAM Basketball Club playing in an MIT gym"
+  },
+  {
+    "title": "Campus tour support",
+    "body": "JAM helps support campus visits for Japanese high school students and other groups interested in seeing MIT from the inside.",
+    "image": "assets/hanami/hanami-kendama.jpg",
+    "alt": "Visitors trying kendama at a JAM cultural booth"
+  }
+]

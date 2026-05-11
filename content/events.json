@@ -1,0 +1,372 @@
+[
+  {
+    "slug": "hanami",
+    "file": "hanami.html",
+    "title": "Hanami Festival",
+    "pageTitle": "Hanami Festival | MIT JAM",
+    "metaDescription": "Hanami Festival from MIT JAM, the Japanese Association of MIT. The 2026 festival welcomed about 350 participants despite weekend rain.",
+    "ogDescription": "MIT JAM's annual Hanami Festival. The 2026 festival welcomed about 350 participants despite weekend rain.",
+    "ogImage": "assets/hanami/hanami-hall.jpg",
+    "ogImageAlt": "JAM Hanami Festival gathering inside Walker Memorial at MIT",
+    "keywords": "hanami closed may 9 2026 sushi rain 350 shogi origami calligraphy kendama booth walker memorial",
+    "homeCard": {
+      "enabled": true,
+      "order": 10,
+      "title": "Hanami Festival 2026",
+      "subtitle": "Closed · May 9, 2026",
+      "image": "assets/hanami/hanami-tables.jpg",
+      "alt": "A large Hanami Festival crowd gathered inside Walker Memorial"
+    },
+    "archiveRow": {
+      "enabled": true,
+      "order": 10,
+      "date": "May 9, 2026",
+      "status": "Closed · annual festival",
+      "summary": "Closed with about 350 participants despite weekend rain, sushi sold out in the first 30 minutes, and lively cultural booths throughout the evening.",
+      "image": "assets/hanami/hanami-hall.jpg",
+      "alt": "Hanami Festival crowd inside Walker Memorial"
+    },
+    "page": {
+      "hero": {
+        "className": "poster-hero",
+        "kicker": "Closed · annual spring festival",
+        "heading": "Hanami Festival.",
+        "deck": "A spring gathering for the MIT community with food, tea, games, calligraphy, origami, and Japanese culture booths.",
+        "image": "assets/hanami-2026.png",
+        "alt": "Hanami Festival 2026 event poster"
+      },
+      "factsLabel": "Hanami Festival facts",
+      "facts": [
+        { "label": "Date", "value": "May 9, 2026" },
+        { "label": "Venue", "value": "Walker Memorial" },
+        { "label": "Status", "value": "Closed" },
+        { "label": "Attendance", "value": "About 350 people" },
+        { "label": "Format", "value": "Food + cultural booths" },
+        { "label": "Audience", "value": "MIT community" }
+      ],
+      "report": {
+        "kicker": "Event report",
+        "heading": "Rainy weekend, full room.",
+        "note": "Hanami Festival 2026 is now closed. Even with weekend rain, the event drew about 350 participants. Sushi sold out in the first 30 minutes, and the shogi, origami, calligraphy, kendama, and other booths stayed lively throughout the evening."
+      },
+      "overview": {
+        "kicker": "Overview",
+        "heading": "Cherry-blossom season, indoors at MIT scale.",
+        "note": "Hanami is JAM's broadest cultural welcome: easy to enter, volunteer-powered, and built around food, conversation, and hands-on booths.",
+        "programs": [
+          {
+            "title": "Food",
+            "body": "Free sushi and Japanese refreshments create the first reason to gather, then the tables turn into conversation spaces."
+          },
+          {
+            "title": "Culture booths",
+            "body": "Matcha, shogi, origami, calligraphy, and other booths give visitors a way to participate instead of only watch."
+          },
+          {
+            "title": "Volunteers",
+            "body": "JAM members organize registration, serving, booths, crowd flow, and cleanup so the event can stay warm and accessible."
+          }
+        ]
+      },
+      "galleryLabel": "Hanami Festival 2026 photo gallery",
+      "gallery": [
+        {
+          "className": "gallery-large",
+          "image": "assets/hanami/hanami-hall.jpg",
+          "alt": "A large Hanami Festival crowd gathered inside Walker Memorial"
+        },
+        {
+          "image": "assets/hanami/hanami-tables.jpg",
+          "alt": "Families and visitors eating together at Hanami Festival"
+        },
+        {
+          "image": "assets/hanami/hanami-shogi.jpg",
+          "alt": "Visitors playing shogi at Hanami Festival"
+        },
+        {
+          "image": "assets/hanami/hanami-calligraphy.jpg",
+          "alt": "Calligraphy booth at Hanami Festival"
+        },
+        {
+          "image": "assets/hanami/hanami-origami.jpg",
+          "alt": "Origami materials at Hanami Festival"
+        },
+        {
+          "className": "gallery-large",
+          "image": "assets/hanami/hanami-dscf6940.jpg",
+          "alt": "Hanami Festival attendees gathering around cultural activity tables"
+        },
+        {
+          "image": "assets/hanami/hanami-dscf6947.jpg",
+          "alt": "Visitors sharing food and conversation at Hanami Festival"
+        },
+        {
+          "image": "assets/hanami/hanami-dscf6956.jpg",
+          "alt": "A busy Hanami Festival table inside Walker Memorial"
+        },
+        {
+          "className": "gallery-large",
+          "image": "assets/hanami/hanami-dscf6960.jpg",
+          "alt": "JAM members and visitors talking during Hanami Festival"
+        },
+        {
+          "image": "assets/hanami/hanami-dscf6982.jpg",
+          "alt": "Guests participating in Hanami Festival activities"
+        },
+        {
+          "image": "assets/hanami/hanami-dscf7036.jpg",
+          "alt": "Kendama; Visitors moving between booths at Hanami Festival"
+        },
+        {
+          "className": "gallery-wide",
+          "image": "assets/hanami/hanami-dscf7049.jpg",
+          "alt": "Calligraphy booth and visitors at Hanami Festival"
+        }
+      ],
+      "archive": {
+        "kicker": "Archive",
+        "heading": "Hanami by year.",
+        "items": [
+          {
+            "href": "hanami.html",
+            "label": "Hanami Festival",
+            "year": "2026",
+            "description": "May 9 at Walker Memorial, with sushi, matcha, games, calligraphy, and origami"
+          },
+          {
+            "href": "https://sites.mit.edu/japan/events/",
+            "label": "Hanami Festival",
+            "year": "2025",
+            "description": "Legacy archive entry from the previous JAM site"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "beneath-great-wave",
+    "file": "beneath-great-wave.html",
+    "title": "Beneath the Great Wave",
+    "pageTitle": "Beneath the Great Wave | MIT JAM",
+    "metaDescription": "Beneath the Great Wave is an MIT JAM event on Japan, tsunami science, disaster management, infrastructure, and resilience.",
+    "ogDescription": "An MIT JAM event on Japan, tsunami science, disaster management, infrastructure, and resilience.",
+    "ogImage": "assets/beneath-great-wave-flyer.png",
+    "ogImageAlt": "Beneath the Great Wave MIT JAM event flyer",
+    "keywords": "great wave rsvp tsunami science resilience japan consulate stata disaster sushi o-i ocha",
+    "homeCard": {
+      "enabled": true,
+      "order": 20,
+      "title": "Beneath the Great Wave",
+      "subtitle": "May 22, 2026",
+      "image": "assets/derived/great-wave.jpg",
+      "alt": "Katsushika Hokusai, The Great Wave off Kanagawa"
+    },
+    "archiveRow": {
+      "enabled": true,
+      "order": 20,
+      "date": "May 22, 2026",
+      "status": "Lecture + panel",
+      "summary": "Confirmed speakers connect tsunami science, disaster management, infrastructure, and resilience in Japan.",
+      "image": "assets/derived/great-wave.jpg",
+      "alt": "Katsushika Hokusai, The Great Wave off Kanagawa"
+    },
+    "page": {
+      "hero": {
+        "className": "wave-hero",
+        "kicker": "Expert talks + panel",
+        "heading": "Beneath the Great Wave.",
+        "deck": "Understanding Japan through science, risk, and resilience.",
+        "image": "assets/beneath-great-wave-flyer.png",
+        "alt": "Beneath the Great Wave official event flyer",
+        "actions": [
+          {
+            "label": "RSVP",
+            "href": "https://docs.google.com/forms/d/e/1FAIpQLSeOAcLIoTamUaWXDlCH8cWDNlg_kLEutMK24mlL8v41kkdiBQ/viewform?usp=dialog",
+            "className": "black-button"
+          }
+        ]
+      },
+      "factsLabel": "Beneath the Great Wave facts",
+      "facts": [
+        { "label": "Date", "value": "May 22, 2026" },
+        { "label": "Time", "value": "5:00-6:15 PM" },
+        { "label": "Venue", "value": "MIT Stata 32-155" },
+        { "label": "Admission", "value": "Free" }
+      ],
+      "overview": {
+        "kicker": "Program",
+        "heading": "A clear evening on natural risk and how societies prepare.",
+        "note": "The event combines a short tsunami video, expert talks, Q&A, and audience conversation. Complimentary sushi boxes and O-i Ocha will be available during networking after the talks.",
+        "actions": [
+          {
+            "label": "RSVP",
+            "href": "https://docs.google.com/forms/d/e/1FAIpQLSeOAcLIoTamUaWXDlCH8cWDNlg_kLEutMK24mlL8v41kkdiBQ/viewform?usp=dialog",
+            "className": "black-button"
+          },
+          {
+            "label": "Open official flyer PDF",
+            "href": "assets/beneath-great-wave-flyer.pdf",
+            "className": "text-button"
+          }
+        ],
+        "programs": [
+          {
+            "title": "Science",
+            "body": "Why earthquakes and tsunamis happen around Japan, and how scientists read the forces beneath the surface."
+          },
+          {
+            "title": "Infrastructure",
+            "body": "How transportation, built systems, and disaster planning respond to recurring natural risk."
+          },
+          {
+            "title": "Resilience",
+            "body": "How communities prepare, recover, and preserve knowledge across generations."
+          }
+        ]
+      },
+      "mealBand": {
+        "kicker": "Food and drink",
+        "heading": "Free sushi box + O-i Ocha.",
+        "paragraphs": [
+          "After the talks, registered attendees can enjoy a complimentary sushi box and O-i Ocha during the networking reception.",
+          "Available while supplies last."
+        ],
+        "image": "assets/sushi_image.png",
+        "alt": "Sushi box served with O-i Ocha"
+      },
+      "speakers": {
+        "kicker": "Confirmed speakers",
+        "heading": "Four expert voices.",
+        "items": [
+          {
+            "label": "MIT EAPS",
+            "name": "Ayako Tsuchiyama",
+            "body": "MIT Earth, Atmospheric and Planetary Sciences PhD."
+          },
+          {
+            "label": "Infrastructure",
+            "name": "Kota Konishi",
+            "body": "Assistant manager, Central Japan Railway Company; MIT System Design and Management.",
+            "bio": "Kota has spent about six years at Central Japan Railway Company (JR Central), working on Shinkansen rolling stock maintenance and the implementation and management of rolling stock inspection facilities. He has also joined a project supporting the introduction of new rolling stock for Taiwan High Speed Rail. He is currently pursuing a master's degree in MIT System Design and Management (SDM), where he studies the design and management of complex socio-technical systems. After graduation, he plans to work on systems design for Shinkansen rolling stock."
+          },
+          {
+            "label": "Seismology",
+            "name": "Yo Kanno",
+            "body": "Japan Meteorological Agency, Seismology and Volcanology Department."
+          },
+          {
+            "label": "Disaster management",
+            "name": "Kenji Takahashi",
+            "body": "Former Director-General for Disaster Management, Cabinet Office; former MLIT Deputy Vice-Minister for Policy Coordination."
+          }
+        ]
+      },
+      "supportNote": {
+        "kicker": "Support",
+        "heading": "Event support.",
+        "note": "Beneath the Great Wave is supported by the Consulate-General of Japan in Boston. JAM also welcomes future partners for lecture and cultural programming."
+      },
+      "archive": {
+        "kicker": "Archive",
+        "heading": "Beneath the Great Wave by year.",
+        "items": [
+          {
+            "href": "beneath-great-wave.html",
+            "label": "Beneath the Great Wave",
+            "year": "2026",
+            "description": "Science, risk, resilience, and Japan"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "orientation",
+    "file": "orientation.html",
+    "title": "MIT New Student Orientation",
+    "pageTitle": "MIT New Student Orientation | MIT JAM",
+    "metaDescription": "MIT New Student Orientation event page from MIT JAM, the Japanese Association of MIT.",
+    "ogDescription": "MIT New Student Orientation event page from MIT JAM, the Japanese Association of MIT.",
+    "ogImage": "assets/hanami/hanami-dscf7011.jpg",
+    "ogImageAlt": "JAM orientation and community activity at MIT",
+    "keywords": "orientation incoming students fall welcome advice",
+    "homeCard": {
+      "enabled": true,
+      "order": 30,
+      "title": "MIT New Student Orientation",
+      "subtitle": "Early fall",
+      "image": "assets/hanami/hanami-dscf7011.jpg",
+      "alt": "A young visitor playing at a Hanami Festival table"
+    },
+    "archiveRow": {
+      "enabled": true,
+      "order": 30,
+      "date": "Early fall",
+      "status": "Annual",
+      "summary": "A start-of-year welcome for incoming students, with practical guidance and space to meet the JAM community.",
+      "image": "assets/hanami/hanami-dscf7011.jpg",
+      "alt": "A young visitor playing at a Hanami Festival table"
+    },
+    "page": {
+      "hero": {
+        "kicker": "Annual fall welcome",
+        "heading": "MIT New Student Orientation.",
+        "deck": "A first point of contact for incoming students looking for Japanese community, practical advice, and friendly faces at MIT.",
+        "image": "assets/hanami/hanami-dscf7011.jpg",
+        "alt": "A young visitor playing at a Hanami Festival table"
+      },
+      "factsLabel": "Orientation facts",
+      "facts": [
+        { "label": "Next edition", "value": "Fall 2026" },
+        { "label": "Date", "value": "TBA" },
+        { "label": "Audience", "value": "Incoming MIT/Harvard students" },
+        { "label": "Format", "value": "Welcome + advice" }
+      ],
+      "overview": {
+        "kicker": "Overview",
+        "heading": "A soft landing at the start of the year.",
+        "note": "The details are still being set, but the goal is steady: help new students meet people, ask practical questions, and find the JAM community early.",
+        "programs": [
+          {
+            "title": "Meet JAM",
+            "body": "Incoming students can meet officers and members, learn how to join the mailing list, and find upcoming events."
+          },
+          {
+            "title": "Practical advice",
+            "body": "Current students share tips on MIT life, Cambridge, research groups, housing, food, and student support."
+          },
+          {
+            "title": "Community start",
+            "body": "The event creates a first room where students can find peers before the semester becomes busy."
+          }
+        ]
+      },
+      "archive": {
+        "kicker": "Archive",
+        "heading": "Orientation by year.",
+        "items": [
+          {
+            "href": "orientation.html",
+            "label": "MIT New Student Orientation",
+            "year": "Fall 2026",
+            "description": "Details TBA"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "basketball-club",
+    "title": "Basketball Club",
+    "keywords": "basketball club weekend community intramural",
+    "homeCard": {
+      "enabled": true,
+      "order": 40,
+      "title": "Basketball Club",
+      "subtitle": "Weekend community",
+      "href": "#activities",
+      "image": "assets/derived/basketball-club.jpg",
+      "alt": "JAM Basketball Club playing in an MIT gym"
+    }
+  }
+]

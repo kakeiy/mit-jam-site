@@ -4,13 +4,41 @@ Static website draft for the Japanese Association of MIT.
 
 ## Structure
 
-- `index.html` - JAM homepage.
-- `events/` - Dedicated event pages and yearly archive index.
+- `content/` - Editable site data. Update these JSON files first.
+- `scripts/build-site.mjs` - Generates the homepage, event pages, search data, and sitemap from `content/`.
+- `index.html` - Generated JAM homepage.
+- `events/` - Generated event pages and yearly archive index.
 - `assets/hanami/` - Web-ready Hanami photos selected from the local source folder.
 - `assets/logos/` - JAM logo variants from the local `Logos` folder.
 - `assets/derived/` - Smaller web-ready copies used in hero and listing layouts.
 
 The original selected source photos in `Photos-3-001/` are intentionally ignored so the site only tracks web-ready copies.
+
+## Editing Content
+
+Most updates should not require touching HTML or CSS.
+
+- Add or edit event cards and event pages in `content/events.json`.
+- Update officers in `content/officers.json`.
+- Update homepage activity cards in `content/activities.json`.
+- Update sponsor/supporter names in `content/supporters.json`.
+- Update global copy, navigation actions, hero slides, mission text, and footer URLs in `content/site.json`.
+
+After editing JSON, run:
+
+```sh
+npm run build
+```
+
+This regenerates:
+
+- `index.html`
+- `events/index.html`
+- `events/*.html`
+- `search-data.js`
+- `sitemap.xml`
+
+Generated files include a short comment at the top. Treat that as a reminder to edit `content/*.json` first.
 
 ## Local Preview
 
@@ -37,5 +65,3 @@ When ready, archive the existing AFS site and copy these files into:
 ```text
 /afs/athena.mit.edu/activity/j/jam/www
 ```
-
-This project has no build step.

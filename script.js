@@ -10,74 +10,7 @@ const sitePrefix = document.currentScript?.getAttribute("src")?.startsWith("../"
   ? "../"
   : "";
 
-const searchIndex = [
-  {
-    title: "About JAM",
-    url: "index.html#about",
-    description: "Japanese Association of MIT, a long-running Japanese association connecting Japan and MIT.",
-    keywords: "about history 1900s japanese association mit jam culture community exchange asa gsc recognized",
-  },
-  {
-    title: "Exhibitions and Events",
-    url: "index.html#events",
-    description: "Current JAM event pages, including Hanami Festival, Beneath the Great Wave, orientation, and activities.",
-    keywords: "events exhibitions hanami great wave orientation basketball archive",
-  },
-  {
-    title: "Hanami Festival 2026",
-    url: "events/hanami.html",
-    description: "Closed May 9, 2026. About 350 participants despite rain, sushi sold out quickly, and cultural booths were lively.",
-    keywords: "hanami closed may 9 2026 sushi rain 350 shogi origami calligraphy kendama booth walker memorial",
-  },
-  {
-    title: "Beneath the Great Wave",
-    url: "events/beneath-great-wave.html",
-    description: "May 22, 2026 lecture and panel on tsunami science, disaster management, infrastructure, and resilience.",
-    keywords: "great wave rsvp tsunami science resilience japan consulate stata disaster",
-  },
-  {
-    title: "MIT New Student Orientation",
-    url: "events/orientation.html",
-    description: "A fall welcome for incoming students looking for Japanese community, practical advice, and friendly faces at MIT.",
-    keywords: "orientation incoming students fall welcome advice",
-  },
-  {
-    title: "MIT Recognition",
-    url: "index.html#recognition",
-    description: "JAM is an ASA-recognized organization with its student governance home in the Graduate Student Council.",
-    keywords: "mit asa association student activities recognized organization gsc graduate student council",
-  },
-  {
-    title: "JAM Officers",
-    url: "index.html#people",
-    description: "Current JAM officers and officer eligibility for MIT graduate students, postdocs, researchers, and related families.",
-    keywords: "officers members president team join us graduate postdoc researcher",
-  },
-  {
-    title: "Activities",
-    url: "index.html#activities",
-    description: "JAM programs, basketball club, cultural programming, campus tours, and community activities.",
-    keywords: "activities basketball club campus tours cultural programming",
-  },
-  {
-    title: "Support and Sponsorship",
-    url: "index.html#support",
-    description: "Partner with JAM through event sponsorship and community programming support.",
-    keywords: "support sponsor sponsorship sgfc taktopia gpi consulate company organization",
-  },
-  {
-    title: "JAM Constitution",
-    url: "assets/JAM_Constitution.docx",
-    description: "The JAM Constitution document.",
-    keywords: "constitution bylaws rules mission",
-  },
-  {
-    title: "Privacy Policy",
-    url: "privacy.html",
-    description: "Privacy notes for the static JAM website and external forms.",
-    keywords: "privacy policy data google forms email",
-  },
-];
+const searchIndex = window.JAM_SEARCH_INDEX || [];
 
 const scrollToHashTarget = (hash) => {
   const target = document.querySelector(hash);

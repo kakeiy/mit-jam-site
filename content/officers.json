@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Kakei Yamamoto",
+    "role": "President",
+    "image": "assets/members/kakei-yamamoto-square.jpg",
+    "featured": true
+  },
+  {
+    "name": "Toshiki Aoki",
+    "role": "Vice President",
+    "image": "assets/members/toshiki-aoki-square.jpg"
+  },
+  {
+    "name": "Shungo Fukaya",
+    "role": "Treasurer",
+    "image": "assets/members/shungo-fukaya-square.jpg"
+  },
+  {
+    "name": "Yurika Aonuki",
+    "image": "assets/members/yurika-aonuki-square.jpg"
+  },
+  {
+    "name": "Yuka Ikarashi",
+    "image": "assets/members/yuka-ikarashi-square.jpg"
+  },
+  {
+    "name": "Takuya Isogawa",
+    "image": "assets/members/takuya-isogawa-square.jpg"
+  },
+  {
+    "name": "Shoki Kishida",
+    "image": "assets/members/shoki-kishida-square.jpg"
+  },
+  {
+    "name": "Daishi Kiyohara",
+    "image": "assets/members/daishi-kiyohara-square.jpg"
+  },
+  {
+    "name": "Kota Kondo",
+    "image": "assets/members/kota-kondo-square.jpg"
+  },
+  {
+    "name": "Keita Mori",
+    "image": "assets/members/keita-mori-square.jpg"
+  },
+  {
+    "name": "Konatsu Mori",
+    "image": "assets/members/konatsu-mori-square.jpg"
+  },
+  {
+    "name": "Ryotaro Okabe",
+    "image": "assets/members/ryotaro-okabe-square.jpg"
+  },
+  {
+    "name": "Yugo Onishi",
+    "image": "assets/members/yugo-onishi-square.jpg"
+  },
+  {
+    "name": "Tasuku Ono",
+    "image": "assets/members/tasuku-ono-square.jpg"
+  },
+  {
+    "name": "Kye Shimizu",
+    "image": "assets/members/kye-shimizu-square.jpg"
+  }
+]

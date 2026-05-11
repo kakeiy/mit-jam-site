@@ -1,0 +1,128 @@
+{
+  "baseUrl": "https://web.mit.edu/jam/www/",
+  "siteName": "JAM | Japanese Association of MIT",
+  "organizationName": "Japanese Association of MIT",
+  "contactEmail": "jam-hq@mit.edu",
+  "updatesUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfAS_hkPno6dewLlewlzrTyg8A7t59hIbqibPIAspVf-8z_nA/viewform?usp=dialog",
+  "officerInterestUrl": "mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM",
+  "sponsorUrl": "mailto:jam-hq@mit.edu?subject=JAM%20sponsorship%20inquiry",
+  "home": {
+    "title": "MIT JAM | Japanese Association of MIT",
+    "description": "Official website of MIT JAM, the Japanese Association of MIT. JAM connects Japan and MIT through culture, community, events, sports, and academic exchange.",
+    "ogDescription": "Official website of MIT JAM, the Japanese Association of MIT. Connecting Japan and MIT through culture, community, events, sports, and academic exchange.",
+    "ogImage": "assets/hanami/hanami-hall.jpg",
+    "ogImageAlt": "JAM members and visitors gathered at MIT during Hanami Festival"
+  },
+  "heroSlides": [
+    {
+      "className": "hero-slide-hanami",
+      "image": "assets/hanami/hanami-hall.jpg",
+      "alt": "Hanami Festival gathering inside Walker Memorial",
+      "active": true
+    },
+    {
+      "className": "hero-slide-wave",
+      "image": "assets/great-wave.jpg",
+      "alt": "Katsushika Hokusai, The Great Wave off Kanagawa"
+    },
+    {
+      "className": "hero-slide-basketball",
+      "image": "assets/derived/basketball-club.jpg",
+      "alt": "JAM Basketball Club playing in an MIT gym"
+    },
+    {
+      "className": "hero-slide-hanami-people",
+      "image": "assets/hanami/hanami-dscf6960.jpg",
+      "alt": "JAM members talking during Hanami Festival"
+    },
+    {
+      "className": "hero-slide-hanami-calligraphy",
+      "image": "assets/hanami/hanami-dscf7049.jpg",
+      "alt": "Calligraphy booth and visitors at Hanami Festival"
+    },
+    {
+      "className": "hero-slide-hanami-family",
+      "image": "assets/hanami/hanami-dscf7011.jpg",
+      "alt": "A young visitor playing at a Hanami Festival table"
+    }
+  ],
+  "welcome": {
+    "heading": "Welcome",
+    "lead": "Connecting Japan and MIT.",
+    "body": "JAM, the Japanese Association of MIT, introduces and promotes Japanese culture, fosters social connections and cultural exchange, and supports academic outreach rooted in Japanese perspectives.",
+    "buttonLabel": "See what is on",
+    "buttonHref": "#events"
+  },
+  "historyBand": {
+    "heading": "A Japanese association at MIT since the 1900s.",
+    "paragraphs": [
+      "Historically, JAM began as a community group for Japanese PhD students at MIT, a small community of roughly 20 people across the Institute. Today, its events welcome the broader MIT community."
+    ],
+    "linkLabel": "JAM Constitution →",
+    "linkHref": "assets/JAM_Constitution.pdf"
+  },
+  "mission": {
+    "kicker": "Purpose",
+    "heading": "What JAM exists to do.",
+    "note": "The mission below follows the JAM Constitution and keeps the organization centered on MIT, Japan, and exchange.",
+    "items": [
+      {
+        "title": "Culture",
+        "body": "Introduce and promote Japanese culture to the MIT community."
+      },
+      {
+        "title": "Community",
+        "body": "Foster social connections and cultural exchange among MIT graduate students, postdocs, and other community members."
+      },
+      {
+        "title": "Outreach",
+        "body": "Facilitate academic outreach and collaboration rooted in Japanese perspectives within the MIT ecosystem."
+      }
+    ]
+  },
+  "officersIntro": {
+    "heading": "JAM officers.",
+    "body": "JAM Officers 2025-2026. These are the current officers organizing JAM programs, not the full jam-all community. Officer roles are open to MIT graduate students, postdocs, researchers, Harvard graduate students studying at MIT, and their families.",
+    "linkLabel": "Officer interest →",
+    "linkHref": "mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM"
+  },
+  "recognitionBand": {
+    "heading": "Graduate-led, MIT-centered.",
+    "paragraphs": [
+      {
+        "html": "The officer team is open to MIT graduate students, postdocs, researchers, Harvard graduate students studying at MIT, and their families. JAM is an <a href=\"https://asa.mit.edu/about-asa/\">Association of Student Activities (ASA)-recognized organization</a> with its student governance home in the <a href=\"https://gsc.mit.edu/\">Graduate Student Council (GSC)</a> of MIT."
+      }
+    ],
+    "linkLabel": "Join the officer team →",
+    "linkHref": "mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM"
+  },
+  "activitiesIntro": {
+    "heading": "Events for everyone",
+    "body": "JAM programs are organized by the officer team, while the events themselves are built for the broader MIT community."
+  },
+  "newsletter": {
+    "heading": "Get JAM updates.",
+    "body": "jam-all reaches more than 800 JAM members and friends across the MIT community.",
+    "primaryLabel": "Join jam-all",
+    "primaryHref": "https://docs.google.com/forms/d/e/1FAIpQLSfAS_hkPno6dewLlewlzrTyg8A7t59hIbqibPIAspVf-8z_nA/viewform?usp=dialog",
+    "secondaryLabel": "Become an officer",
+    "secondaryHref": "mailto:jam-hq@mit.edu?subject=Officer%20interest%20in%20JAM"
+  },
+  "support": {
+    "kicker": "Support",
+    "heading": "Partner with JAM.",
+    "paragraphs": [
+      "Support is organized around individual events. Recent JAM programs have received support from MIT SGFC Funding, the MIT School of Quality of Life Grant Program, Taktopia, and GPI-US. Beneath the Great Wave is supported by the Consulate-General of Japan in Boston.",
+      "JAM welcomes new company and organization partners for cultural programs, lectures, student welcome events, and community activities."
+    ],
+    "buttonLabel": "Sponsor an event",
+    "buttonHref": "mailto:jam-hq@mit.edu?subject=JAM%20sponsorship%20inquiry"
+  },
+  "footer": {
+    "privacyHref": "privacy.html",
+    "constitutionHref": "assets/JAM_Constitution.pdf",
+    "mitUrl": "https://www.mit.edu/",
+    "asaUrl": "https://asa.mit.edu/about-asa/",
+    "gscUrl": "https://gsc.mit.edu/"
+  }
+}
