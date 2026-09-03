@@ -287,57 +287,73 @@
   {
     "slug": "orientation",
     "file": "orientation.html",
-    "title": "MIT New Student Orientation",
-    "pageTitle": "MIT New Student Orientation | MIT JAM",
-    "metaDescription": "MIT New Student Orientation event page from MIT JAM, the Japanese Association of MIT.",
-    "ogDescription": "MIT New Student Orientation event page from MIT JAM, the Japanese Association of MIT.",
+    "title": "New Student Orientation",
+    "pageTitle": "New Student Orientation | MIT JAM",
+    "metaDescription": "Join MIT JAM's free New Student Orientation dinner for incoming students, postdocs, researchers, and other members of the MIT and Harvard communities on September 17, 2026.",
+    "ogDescription": "A free welcome dinner near Central Square for incoming students and members of the MIT and Harvard communities.",
     "ogImage": "assets/hanami/hanami-dscf7011.jpg",
     "ogImageAlt": "JAM orientation and community activity at MIT",
-    "keywords": "orientation incoming students fall welcome advice",
+    "keywords": "orientation incoming students MIT Harvard postdocs researchers Central Square September 17 2026 welcome dinner registration",
     "homeCard": {
       "enabled": true,
       "order": 30,
-      "title": "MIT New Student Orientation",
-      "subtitle": "Early fall",
+      "title": "New Student Orientation",
+      "subtitle": "September 17, 2026 · Free dinner",
       "image": "assets/hanami/hanami-dscf7011.jpg",
       "alt": "A young visitor playing at a Hanami Festival table"
     },
     "archiveRow": {
       "enabled": true,
       "order": 30,
-      "date": "Early fall",
-      "status": "Annual",
-      "summary": "A start-of-year welcome for incoming students, with practical guidance and space to meet the JAM community.",
+      "date": "September 17, 2026",
+      "status": "Registration open · free dinner",
+      "summary": "A free welcome dinner near Central Square for incoming students, postdocs, researchers, and other members of the MIT and Harvard communities.",
       "image": "assets/hanami/hanami-dscf7011.jpg",
       "alt": "A young visitor playing at a Hanami Festival table"
     },
     "page": {
       "hero": {
         "kicker": "Annual fall welcome",
-        "heading": "MIT New Student Orientation.",
-        "deck": "A first point of contact for incoming students looking for Japanese community, practical advice, and friendly faces at MIT.",
+        "heading": "New Student Orientation.",
+        "deck": "A free welcome dinner for incoming students and members of the MIT and Harvard communities who are interested in Japan or the JAM community.",
         "image": "assets/hanami/hanami-dscf7011.jpg",
-        "alt": "A young visitor playing at a Hanami Festival table"
+        "alt": "A young visitor playing at a Hanami Festival table",
+        "actions": [
+          {
+            "label": "RSVP",
+            "href": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=utmvZM8Oz0q8NpNfYjW6i4YYVDb87ddKinWtnkOJpShUREJRVjdQTEUxUFFEUlIxR01IUTRMVEFCWCQlQCN0PWcu",
+            "className": "black-button"
+          }
+        ]
       },
       "factsLabel": "Orientation facts",
       "facts": [
-        { "label": "Next edition", "value": "Fall 2026" },
-        { "label": "Date", "value": "TBA" },
-        { "label": "Audience", "value": "Incoming MIT/Harvard students" },
-        { "label": "Format", "value": "Welcome + advice" }
+        { "label": "Date", "value": "Thursday, September 17, 2026" },
+        { "label": "Dinner", "value": "7:00 PM" },
+        { "label": "Location", "value": "Near Central Square · TBD" },
+        { "label": "Participation fee", "value": "Free" },
+        { "label": "Meet-up option", "value": "MIT or Harvard · 6:30 PM" },
+        { "label": "Audience", "value": "MIT + Harvard communities" }
       ],
       "overview": {
         "kicker": "Overview",
         "heading": "A soft landing at the start of the year.",
-        "note": "The details are still being set, but the goal is steady: help new students meet people, ask practical questions, and find the JAM community early.",
+        "note": "Meet at MIT or Harvard at 6:30 PM and travel with the group, or join us directly at the restaurant at 7:00 PM. Exact meeting points and restaurant details will be shared with registrants by email and posted here when confirmed. People of all nationalities and backgrounds are welcome.",
+        "actions": [
+          {
+            "label": "Open the registration form",
+            "href": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=utmvZM8Oz0q8NpNfYjW6i4YYVDb87ddKinWtnkOJpShUREJRVjdQTEUxUFFEUlIxR01IUTRMVEFCWCQlQCN0PWcu",
+            "className": "text-button"
+          }
+        ],
         "programs": [
           {
             "title": "Meet JAM",
-            "body": "Incoming students can meet officers and members, learn how to join the mailing list, and find upcoming events."
+            "body": "Incoming students, postdocs, researchers, and other members of the MIT and Harvard communities can meet JAM officers and members and learn about upcoming activities."
           },
           {
             "title": "Practical advice",
-            "body": "Current students share tips on MIT life, Cambridge, research groups, housing, food, and student support."
+            "body": "Current community members share practical perspectives on life in Cambridge, research, housing, food, and finding support."
           },
           {
             "title": "Community start",
@@ -351,9 +367,9 @@
         "items": [
           {
             "href": "orientation.html",
-            "label": "MIT New Student Orientation",
+            "label": "New Student Orientation",
             "year": "Fall 2026",
-            "description": "Details TBA"
+            "description": "September 17 · free welcome dinner near Central Square"
           }
         ]
       }

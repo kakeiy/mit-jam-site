@@ -24,10 +24,10 @@ window.JAM_SEARCH_INDEX = [
     "keywords": "great wave rsvp tsunami science resilience japan consulate stata disaster sushi o-i ocha kenji takahashi 高橋謙司 cabinet office regional revitalization disaster management"
   },
   {
-    "title": "MIT New Student Orientation",
+    "title": "New Student Orientation",
     "url": "events/orientation.html",
-    "description": "MIT New Student Orientation event page from MIT JAM, the Japanese Association of MIT.",
-    "keywords": "orientation incoming students fall welcome advice"
+    "description": "Join MIT JAM's free New Student Orientation dinner for incoming students, postdocs, researchers, and other members of the MIT and Harvard communities on September 17, 2026.",
+    "keywords": "orientation incoming students MIT Harvard postdocs researchers Central Square September 17 2026 welcome dinner registration"
   },
   {
     "title": "MIT Recognition",
@@ -92,10 +92,10 @@ window.JAM_SEARCH_INDEX_JA = [
     "keywords": "Beneath the Great Wave 津波 科学 防災 インフラ レジリエンス 日本 寿司 お茶 RSVP"
   },
   {
-    "title": "MIT新入生オリエンテーション",
+    "title": "新入生オリエンテーション",
     "url": "events/orientation.html",
-    "description": "MIT JAMによる新入生向けオリエンテーションページ。",
-    "keywords": "オリエンテーション 新入生 MIT 生活 相談 コミュニティ"
+    "description": "2026年9月17日にCentral Square付近で開催する、MIT・Harvardコミュニティ向けの無料オリエンテーションディナー。",
+    "keywords": "オリエンテーション 新入生 MIT Harvard ポスドク 研究者 Central Square 2026年9月17日 無料 ディナー"
   },
   {
     "title": "MIT公認団体としてのJAM",
